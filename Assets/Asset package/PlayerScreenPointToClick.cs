@@ -32,7 +32,7 @@ public class PlayerScreenPointToClick : MonoBehaviour {
      * Get swipe speed from basics of <speed = distance / timedifference;>
      *
      */
-
+    public Transform Locators;
     public Camera cam;
 
     // Use this for initialization
@@ -104,7 +104,7 @@ public class PlayerScreenPointToClick : MonoBehaviour {
                 {
                     Debug.DrawRay(ray.origin, ray.direction * 10, Color.cyan, 15);
                     Debug.Log("Before destroying thing");
-                    if (hit.collider.gameObject.tag == "facialHair")
+                    if (hit.collider.gameObject.tag == "facialHair" && canDestroyBeard)
                     {
                         Debug.Log("Destroy thing");
                         hit.collider.gameObject.GetComponent<hairScore>().IAmHit(this);
@@ -124,6 +124,19 @@ public class PlayerScreenPointToClick : MonoBehaviour {
                 //}
             }
                 //Instantiate(particle, transform.position, transform.rotation);
+        }
+    }
+
+    private bool canDestroyBeard = false;
+    public bool DestroyBeard
+    {
+        get
+        {
+            return canDestroyBeard;
+        }
+        set
+        {
+            canDestroyBeard = value;
         }
     }
 
