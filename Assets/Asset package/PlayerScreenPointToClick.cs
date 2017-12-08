@@ -113,10 +113,9 @@ public class PlayerScreenPointToClick : MonoBehaviour {
                     }
                 if (hit.collider.gameObject.tag == "face")
                 {
-                    if(hit.collider.gameObject.GetComponent("Rigidbody") != null)
+                    Rigidbody rb_2 = FindRigidBodyOnParents(hit.collider.gameObject);
+                    if (rb_2 != null)
                     {
-                        Rigidbody rb_2 = hit.collider.gameObject.GetComponent<Rigidbody>();
-                        //hit.point.r
                         //Add force at hitPoint
                         rb_2.AddForceAtPosition(hitForce, hit.point);
                     }
@@ -126,5 +125,18 @@ public class PlayerScreenPointToClick : MonoBehaviour {
             }
                 //Instantiate(particle, transform.position, transform.rotation);
         }
+    }
+
+    Rigidbody FindRigidBodyOnParents(GameObject go)
+    {
+        Transform t = go.transform;
+        while (t != null)
+        {
+            Rigidbody rb = t.GetComponent<Rigidbody>();
+            if (rb != null)
+                return rb;
+            t = t.parent;
+        }
+        return null;
     }
 }
