@@ -70,36 +70,74 @@ public class liveGameSetup : MonoBehaviour {
 
 
     }
-	
+    int highestNumericValue = 0;
+    //int spare = 0;
     /// <summary>
     /// When called, it will verify the transforms that are children of this transform, and then process them for naming conventions. Return then repeat.
     /// </summary>
     void transformFilter()
     {
         Transform[] children = GetComponentsInChildren<Transform>();
-        int highestNumericValue = 0;
+        //int highestNumericValue = 0;
         foreach(Transform child in children)
         {
             int nameNum = 0;
             int returning;
             bool returnable;
+
+            string newNum = "";
             Debug.LogError("Require research and assistance converting transform name to int number!");
-            bool result = int.TryParse(child.transform.name, out returning);
-            if(result)
+            foreach (char testing in child.transform.name)
             {
-                nameNum = int.Parse(child.transform.name);
+                int tester = 0;
+                //if(testing != int)
+                if (char.IsNumber(testing))
+                {
+                    tester = int.Parse(testing + "");
+                    newNum += testing;
+                    Debug.Log(testing);
+
+                    nameNum = int.Parse(newNum);
+                    if (nameNum > highestNumericValue)
+                    {
+                        highestNumericValue = nameNum;
+                    }
+                }
+
+
+
+
             }
+            //nameNum = int.Parse(newNum);
+
+            //bool result = int.TryParse(child.transform.name, out returning);
+            //if(result)
+            //{
+            //    string reChildName = child.transform.name;
+            //    if(reChildName.Contains("[stop]"))
+            //    {
+            //        reChildName.Replace("[stop]", "");
+            //    }
+            //    //string newInt = int.Parse(child.transform.name);
+            //    Debug.Log(reChildName + " : " + child.transform.name + " : " + returning);
+            //    Debug.Log(int.Parse(reChildName));
+            //    nameNum = int.Parse(reChildName/*child.transform.name*/);
+            //}
+
+            ////ToString
             //int nameNum = int.TryParse(child.transform.name, out returning);
             if (nameNum > highestNumericValue)
                 highestNumericValue = nameNum;
         }
 
-        movePoints = new levelProgression[highestNumericValue];
+        movePoints = new levelProgression[highestNumericValue + 1];
         highestNumericValue = 0;
 
-        int i = 0;
+        //int i = 0;
+        for(int i = 0; i < highestNumericValue; i++)
         foreach (Transform child in children)
         {
+
             int nameNum = int.Parse(child.transform.name);
             if(nameNum == i)
             {

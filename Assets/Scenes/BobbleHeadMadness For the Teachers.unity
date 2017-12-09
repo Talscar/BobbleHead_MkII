@@ -240,7 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383242166}
   m_Layer: 0
-  m_Name: 0[stop]
+  m_Name: 0z_[stop]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3962,7 +3962,7 @@ GameObject:
   - component: {fileID: 1093738195}
   - component: {fileID: 1093738194}
   m_Layer: 0
-  m_Name: NPC_Location (1)
+  m_Name: NPC_Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4370,6 +4370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movePoints: []
   toBeShavedFaceRig: []
+  highestNumericValue: 0
 --- !u!1001 &2043734347
 Prefab:
   m_ObjectHideFlags: 0
@@ -4426,7 +4427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2103336773}
   m_Layer: 0
-  m_Name: 2[stop]
+  m_Name: 2z_[stop]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
