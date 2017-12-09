@@ -12,6 +12,7 @@ public class progressionReportSystem : MonoBehaviour {
     /// Common people are Adam at 60%, Mark 10%, Matt 15%, Chris 15% etc.
     [Tooltip("It has to instantiate at THIS Specific location. So be happy with where it resides!")]
     public GameObject[] MultipleHeadsToShave;
+    GameObject insantiatedRefrence;
 
     void Awake()
     {
@@ -23,10 +24,15 @@ public class progressionReportSystem : MonoBehaviour {
 		
 	}
 	
+    public void OnKill()
+    {
+
+    }
+
     void OnRespawn()
     {
         int rng = Random.Range(0, MultipleHeadsToShave.Length);
-        Instantiate(MultipleHeadsToShave[rng], transform);
+        insantiatedRefrence = Instantiate(MultipleHeadsToShave[rng], transform);
     }
 
 	// Update is called once per frame
