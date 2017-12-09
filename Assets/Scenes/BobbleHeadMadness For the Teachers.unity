@@ -269,7 +269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 573340624}
   m_Layer: 0
-  m_Name: 4
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4368,6 +4368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a6d8b609154e549bd8824fd9f5f967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movePoints: []
   toBeShavedFaceRig: []
 --- !u!1001 &2043734347
 Prefab:
@@ -4425,7 +4426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2103336773}
   m_Layer: 0
-  m_Name: 3[stop]
+  m_Name: 2[stop]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
