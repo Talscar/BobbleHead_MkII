@@ -21,7 +21,7 @@ public class gameManagerScript : MonoBehaviour {
     //public float time;
 
     /// <param name="time_TimetimeStart">When the match started!<param name="time_TimetimeStart"></param></param>
-    float time_TimetimeStart = 0; //When the game started
+    public float time_TimetimeStart = 0; //When the game started
 
 	void Start () {
         player = FindObjectOfType<PlayerScreenPointToClick>();
@@ -37,7 +37,7 @@ public class gameManagerScript : MonoBehaviour {
     PlayerScreenPointToClick player;
     public UnityEngine.UI.Button button;
     public UnityEngine.UI.Text CountDown;
-
+    public float thisTime;
     //bool canInteract;
     /// <summary>
     /// When the game starts, it processes a timer and calculates when the game start and initilizes player ability to interact with world objects or not.
@@ -45,6 +45,7 @@ public class gameManagerScript : MonoBehaviour {
     void gameStart()
     {
         time_TimetimeStart = Time.time;
+
         //time_TimetimeStart = time;
         //player.DestroyBeard = true;
         button.gameObject.SetActive(false);
@@ -66,6 +67,7 @@ public class gameManagerScript : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
+        thisTime = Time.time;
         if (running)
         {
             if (Time.time - (time_TillStart) < time_TimetimeStart)

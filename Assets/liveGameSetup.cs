@@ -70,7 +70,7 @@ public class liveGameSetup : MonoBehaviour {
 
 
     }
-    int highestNumericValue = 0;
+    public int highestNumericValue = 0;
     //int spare = 0;
     /// <summary>
     /// When called, it will verify the transforms that are children of this transform, and then process them for naming conventions. Return then repeat.
@@ -161,33 +161,141 @@ public class liveGameSetup : MonoBehaviour {
                     //    Debug.LogWarning("Hello!");
                     //}
                     //Debug.LogError(transformOrder + " : " + tester);
-                    if (tester == transformOrder)
-                    {
-                        highestNumericValue = nameNum;
-                        movePoints[transformOrder].moveTo = child;
-                        movePoints[transformOrder].toProcess = child.GetComponentInChildren<progressionReportSystem>();
-                        if(movePoints[transformOrder].toProcess == null)
-                        {
-                            if(movePoints[transformOrder].moveTo.name.Contains("[stop]"))
-                            {
-                                movePoints[transformOrder].moveTo.name.Replace("[stop]", "");
-                            }
-                        }
+                    int newSelection = returnNewTransform(children, transformOrder);
+                    if (newSelection >= 0)
 
-                        transformOrder++;
-                    }
+                        ///<Info: FOLLOWING line of code prevents filtering correctly all Transforms.
+                        /// It also prevents having more than 0 - 9 transforms thus now allowing us to have 10 or more 10+!
+                        //if (tester == transformOrder)
+                        {
+                            Debug.LogError("Return a new transform - to gain functionality. 10+ Transforms accessible. - " + newSelection );
+                            //returnNewTransform();
+                            highestNumericValue = nameNum;
+
+                            ///Replaced children[transformOrder] with children[newSelection]
+                            movePoints[transformOrder].moveTo = children[newSelection];
+                            movePoints[transformOrder].toProcess = children[newSelection].GetComponentInChildren<progressionReportSystem>();
+                            if (movePoints[transformOrder].toProcess == null)
+                            {
+                                if (movePoints[transformOrder].moveTo.name.Contains("[stop]"))
+                                {
+                                    movePoints[transformOrder].moveTo.name.Replace("[stop]", "");
+                                }
+                            }
+
+                            transformOrder++;
+                        }
                 }
             }
 
 
-            ////////////nameNum = int.Parse(child.transform.name);
+            /////
+            //if (returnNewTransform(children, transformOrder) != null)
+            //{
+            //    Debug.LogError("Return a new transform - to gain functionality. 10+ Transforms accessible.");
+            //    //returnNewTransform();
+            //    highestNumericValue = nameNum;
+            //    movePoints[transformOrder].moveTo = child;
+            //    movePoints[transformOrder].toProcess = child.GetComponentInChildren<progressionReportSystem>();
+            //    if (movePoints[transformOrder].toProcess == null)
+            //    {
+            //        if (movePoints[transformOrder].moveTo.name.Contains("[stop]"))
+            //        {
+            //            movePoints[transformOrder].moveTo.name.Replace("[stop]", "");
+            //        }
+            //    }
+
+
+            //    ////////////nameNum = int.Parse(child.transform.name);
             ////////////if (nameNum == i)
             ////////////{
             ////////////    children[highestNumericValue] = child;
             ////////////}
         }
-    }
+        }
 
+    int returnNewTransform(Transform[] transforms, int findMe)
+    {
+
+        //int returning;
+        //bool returnable;
+
+        //
+        ////int nameNum = 0;
+        ////int returning;
+        ////bool returnable;
+
+        ////string newNum = "";
+        //////Debug.LogError("Require research and assistance converting transform name to int number!");
+        ////foreach (char testing in child.transform.name)
+        ////{
+        ////    int tester = 0;
+        ////    //if(testing != int)
+        ////    if (char.IsNumber(testing))
+        ////    {
+        ////        tester = int.Parse(testing + "");
+        ////        newNum += testing;
+        ////        //Debug.Log(testing);
+
+        ////        nameNum = int.Parse(newNum);
+        ////        if (nameNum > highestNumericValue)
+        ////        {
+        ////            highestNumericValue = nameNum;
+        ////        }
+        ////    }
+
+
+
+
+        ////}
+        //
+        int ic = 0;
+        foreach (Transform child in transforms)
+        {
+        string newNum = "";
+        int nameNum = 0;
+            foreach (char testing in child.transform.name)
+            {
+                    //int tester = 0;
+                //int tester = 0;
+                //if(testing != int)
+                if (char.IsNumber(testing))
+                {
+                    //tester = int.Parse(testing + "");
+                    newNum += testing;
+                    //Debug.Log(testing);
+
+                    nameNum = int.Parse(newNum);
+                    if (nameNum > highestNumericValue)
+                    {
+                        highestNumericValue = nameNum;
+                    }
+                }
+                //tester = int.Parse(testing + "");
+                    //newNum += testing;
+                    //Debug.Log(testing);
+
+                    //nameNum = int.Parse(newNum);
+
+
+
+            }
+            Debug.LogError("Check agaisnt highest numerical value based on slots and values itself.");
+            //highestNumericValue
+            if (newNum != "")
+            {
+                //if(newNum.try)
+                Debug.Log("ISSUES: " + newNum + " : " + nameNum);
+                nameNum = int.Parse(newNum);
+                if (findMe == nameNum/*testing*/)
+                {
+                    return ic;
+                }
+            }
+            ic++;
+        }
+        return -1;
+    }
     int transformOrder = 0;
     /// <summary>
     /// Returns a value if the string sent is a number based on filtering values.
