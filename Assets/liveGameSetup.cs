@@ -358,6 +358,7 @@ public class liveGameSetup : MonoBehaviour {
             if (preClick)
             {
                 MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
+                preClick = false;
             }
             if (positionCamera) //Time speed delay variables
             {
