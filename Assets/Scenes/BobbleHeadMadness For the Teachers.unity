@@ -4605,6 +4605,14 @@ MonoBehaviour:
   movePoints: []
   toBeShavedFaceRig: []
   highestNumericValue: 0
+  travelSpeedOverTime: 0.2
+  distanceSensitivity: 0.3
+  timeSpeedDelayVariblesBetweenTransitions: 1.6
+  MoveAtTime: 0
+  nextPosition: 1
+  positionCamera: 1
+  rotateCamera: 0
+  currentTransform: 0
 --- !u!1001 &2043734347
 Prefab:
   m_ObjectHideFlags: 0

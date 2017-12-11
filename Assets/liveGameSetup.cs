@@ -334,8 +334,92 @@ public class liveGameSetup : MonoBehaviour {
         }
 
     }
+
+    void transformCamera()
+    {
+        //if (movePoints.Length < currentTransform)
+        //{
+        //    currentTransform = 0;
+        //}
+
+        if (MoveAtTime < Time.time)
+        {
+            if (positionCamera) //Time speed delay variables
+            {
+
+                mainCamera.position = Vector3.Lerp(mainCamera.position, movePoints[currentTransform].moveTo.position, travelSpeedOverTime);
+                float distance = Vector3.Distance(mainCamera.position, movePoints[currentTransform].moveTo.position);
+                if (distance < distanceSensitivity)
+                {
+                    positionCamera = false;
+                    rotateCamera = true;
+                    MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
+                }
+            }
+            else if (rotateCamera) //Time speed delay variables
+            {
+                mainCamera.eulerAngles = Vector3.Lerp(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles, travelSpeedOverTime);
+                float distance = Vector3.Distance(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles);
+                if (distance < distanceSensitivity)
+                {
+                    //positionCamera = false;
+                    rotateCamera = false;
+                    MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
+                }
+            }
+        }
+        else if(!positionCamera && !rotateCamera)
+        {
+            //Test for stop on thing!
+            Debug.Log("Requires Filter and logic loops.");
+            if(movePoints[currentTransform].toProcess != null)
+            {
+                //stop moving, reactivate the sissors and get chopping!
+            }
+
+
+            positionCamera = true;
+            //currentTransform++;
+            //Filter name continue finding new positions or stop!
+            if (movePoints.Length > currentTransform + 1)
+            {
+                if (movePoints[currentTransform + 1].moveTo != null)
+                {
+                    currentTransform++;
+                }
+                else
+                    currentTransform = 0;
+            }
+            else
+                currentTransform = 0;
+
+
+            //else
+            //{
+            //    currentTransform = 0;
+            //}
+            //if()
+        }
+
+
+    }
+
+    [Header("Camera transform tuning tools")]
+    public float travelSpeedOverTime = 0.2f;
+    public float distanceSensitivity = 0.3f;
+    public float timeSpeedDelayVariblesBetweenTransitions = 1.6f;
+    [SerializeField] private float MoveAtTime = 0;
+    [Header("To be Private variables")]
+    public bool nextPosition = false;
+    public bool positionCamera = false;
+    public bool rotateCamera = false;
+    public int currentTransform = 0;
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+	if(nextPosition)
+        {
+            transformCamera();
+        }	
 	}
 }
