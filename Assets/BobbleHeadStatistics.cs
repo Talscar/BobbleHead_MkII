@@ -23,6 +23,7 @@ public class BobbleHeadStatistics : MonoBehaviour {
     bool destroying = false;
     void selfDestruct()
     {
+        Debug.LogWarning("If destroyed before declaring completion or updating visuals. Or before secondary transition is complete, the game will break!");
         if(particleDeathSmokeBurst != null)
         {
             GameObject toDestroy = Instantiate(particleDeathSmokeBurst);

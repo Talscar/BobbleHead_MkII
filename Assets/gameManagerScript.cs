@@ -26,16 +26,16 @@ public class gameManagerScript : MonoBehaviour {
 	void Start () {
         player = FindObjectOfType<PlayerScreenPointToClick>();
         player.DestroyBeard = false;
-        if (button != null)
+        if (StartGame_Button != null)
         {
-            button.onClick.AddListener(gameStart);
+            StartGame_Button.onClick.AddListener(gameStart);
         }
         //time += time_ToComplete + time_TillStart;
 	}
 
 
     PlayerScreenPointToClick player;
-    public UnityEngine.UI.Button button;
+    public UnityEngine.UI.Button StartGame_Button;
     public UnityEngine.UI.Text CountDown;
     public float thisTime;
     //bool canInteract;
@@ -48,7 +48,7 @@ public class gameManagerScript : MonoBehaviour {
 
         //time_TimetimeStart = time;
         //player.DestroyBeard = true;
-        button.gameObject.SetActive(false);
+        StartGame_Button.gameObject.SetActive(false);
         running = true;
     }
 
@@ -60,9 +60,9 @@ public class gameManagerScript : MonoBehaviour {
     {
         running = false;
         player.DestroyBeard = false;
-        if(button != null)
+        if(StartGame_Button != null)
         {
-            button.gameObject.SetActive(true);
+            StartGame_Button.gameObject.SetActive(true);
         }
     }
 	// Update is called once per frame

@@ -19,6 +19,9 @@ public class FaceBobble_Relocator : MonoBehaviour {
         
     }
     public sensitivityVariables Sensitivity_Options;
+
+
+    public UnityEngine.UI.Button skip;
 	// Use this for initialization
 	void Start () {
         if(faceToRelocate == null)
@@ -38,6 +41,12 @@ public class FaceBobble_Relocator : MonoBehaviour {
             //foreach(Transform child in transform.children)
             Debug.LogError("If the Face transform is not present, the game can not return face to origin location!");
         }
+
+        skip = GameObject.FindGameObjectWithTag("skip").GetComponentInChildren<UnityEngine.UI.Button>();
+        Debug.LogError("For each locator! IF the skip is pressed the player should move functionality not yet implemented! Requires listener.");
+
+        ///Listener:
+        //If clicked, it will deactivate the player... And move to next target but without aquiring additional score.
 		
 	}
 	

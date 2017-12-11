@@ -168,7 +168,7 @@ public class liveGameSetup : MonoBehaviour {
                         /// It also prevents having more than 0 - 9 transforms thus now allowing us to have 10 or more 10+!
                         //if (tester == transformOrder)
                         {
-                            Debug.LogError("Return a new transform - to gain functionality. 10+ Transforms accessible. - " + newSelection );
+                            //Debug.LogError("Return a new transform - to gain functionality. 10+ Transforms accessible. - " + newSelection );
                             //returnNewTransform();
                             highestNumericValue = nameNum;
 
@@ -285,7 +285,7 @@ public class liveGameSetup : MonoBehaviour {
             if (newNum != "")
             {
                 //if(newNum.try)
-                Debug.Log("ISSUES: " + newNum + " : " + nameNum);
+                //Debug.Log("ISSUES: " + newNum + " : " + nameNum);
                 nameNum = int.Parse(newNum);
                 if (findMe == nameNum/*testing*/)
                 {
@@ -335,6 +335,17 @@ public class liveGameSetup : MonoBehaviour {
 
     }
 
+    /// <summary>
+    /// When my current FaceBobble_Relocator target is shaved or skipped... Function activates to inform this script its time to move to the next target!
+    /// </summary>
+    public void nextTarget()
+    {
+        nextPosition = true;
+        preClick = true;
+    }
+        /// <summary>
+        /// 
+        /// </summary>
     void transformCamera()
     {
         //if (movePoints.Length < currentTransform)
@@ -344,6 +355,10 @@ public class liveGameSetup : MonoBehaviour {
 
         if (MoveAtTime < Time.time)
         {
+            if (preClick)
+            {
+                MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
+            }
             if (positionCamera) //Time speed delay variables
             {
 
@@ -368,12 +383,15 @@ public class liveGameSetup : MonoBehaviour {
                 }
             }
         }
-        else if(!positionCamera && !rotateCamera)
+        else if(!positionCamera && !rotateCamera && nextPosition)
         {
+            //if(movePoints[currentTransform].toProcess != null)
             //Test for stop on thing!
             Debug.Log("Requires Filter and logic loops.");
             if(movePoints[currentTransform].toProcess != null)
             {
+                nextPosition = false;
+                //movePoints[currentTransform + 1]
                 //stop moving, reactivate the sissors and get chopping!
             }
 
@@ -414,7 +432,11 @@ public class liveGameSetup : MonoBehaviour {
     public bool positionCamera = false;
     public bool rotateCamera = false;
     public int currentTransform = 0;
-	// Update is called once per frame
+    // Update is called once per frame
+
+    bool preClick = true;
+
+
 	void Update ()
     {
 	if(nextPosition)
