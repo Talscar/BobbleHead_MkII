@@ -13,65 +13,23 @@ public class liveGameSetup : MonoBehaviour {
     }
     public levelProgression[] movePoints;
     int movePoints_Location = 0;
-
+    PlayerScreenPointToClick player;
     [SerializeField] private progressionReportSystem[] toBeShavedFaceRig = null; 
 	// Use this for initialization
 	void Start ()
     {
+        a = returnNewScriptSpawner();
         Transform[] children = GetComponentsInChildren<Transform>();
         mainCamera = Camera.main.gameObject.transform;
+        player = mainCamera.GetComponent<PlayerScreenPointToClick>();
 
         transformFilter();
-        //Transform[] stopPoints;
-        //int i = 0;
-        //int scripts = 0;
-        //foreach (Transform child in children)
-        //{
-        //    if(child.name.Contains("[stop]"))
-        //    {
-        //        i++;
-        //        progressionReportSystem test = child.GetComponentInChildren<progressionReportSystem>();
-        //        if (test != null)
-        //        {
-        //            scripts++;
-        //        }
-        //    }
-        //}
-        //int countTransforms = GetComponentInChildren<Transform>().childCount;
-        //Debug.Log(countTransforms);
-        //stopPoints = new Transform[i];
-        //toBeShavedFaceRig = new progressionReportSystem[scripts];
-        //movePoints = new levelProgression[countTransforms];
-        //i = 0;
-        //scripts = 0;
-        //foreach (Transform child in children)
-        //{
-        //    if (child != transform)
-        //    {
-        //        movePoints[i].moveTo = child;
-        //        if (child.name.Contains("[stop]"))
-        //        {
-        //            stopPoints[i] = child;
-        //            //i++;
-        //            progressionReportSystem test = child.GetComponentInChildren<progressionReportSystem>();
-        //            if (test != null)
-        //            {
-        //                toBeShavedFaceRig[scripts] = test;
-        //                movePoints[i].toProcess = test;
-        //                scripts++;
-        //            }
-        //        }
-        //        i++;
-        //    }
-        //}
 
         mainTransform(movePoints[movePoints_Location].moveTo, false);
-        //foreach
-
-
     }
+
+
     public int highestNumericValue = 0;
-    //int spare = 0;
     /// <summary>
     /// When called, it will verify the transforms that are children of this transform, and then process them for naming conventions. Return then repeat.
     /// </summary>
@@ -337,15 +295,68 @@ public class liveGameSetup : MonoBehaviour {
 
     /// <summary>
     /// When my current FaceBobble_Relocator target is shaved or skipped... Function activates to inform this script its time to move to the next target!
+    /// Process 2.Start
     /// </summary>
     public void nextTarget()
     {
+        Debug.Log("Next target!");
+        player.canFire(false);
         nextPosition = true;
-        preClick = true;
+        //preClick = true;
+
+        //movePoints
+        //foreach (levelProgression thisSpawner in movePoints[].toProcess)
+        foreach (levelProgression nextTransform in movePoints)
+        {
+            if(nextTransform.toProcess != null)
+            {
+                //Spawn it in!
+                //Get the new thing to destroy and set as transform B!
+                //b = nextTransform.toProcess.OnRespawn();
+                b = returnNewScriptSpawner();
+            }
+        }
+        return;
     }
-        /// <summary>
+
+    /// <summary>
+    /// Returns the Transform in the order of selection to do stuff with.
+    /// </summary>
+    /// <returns></returns>
+    Transform returnNewScriptSpawner()
+    {
+
+        //currentTransform
+        int i = 0;
+        int newCurrentTransform = currentTransform;
+        ///a = newCurrentTransform - I
         /// 
-        /// </summary>
+        // -37 + i = 0;
+        //
+
+
+        while(i < movePoints.Length)
+        {
+            if(newCurrentTransform + i > movePoints.Length)
+            {
+                newCurrentTransform = 0 - i;
+                //newCurrentTransform = newCurrentTransform;
+            }
+            if (movePoints[newCurrentTransform + i].toProcess != null)
+            {
+                return movePoints[newCurrentTransform + i].toProcess.OnRespawn();
+            }
+            //newCurrentTransform++;
+            i++;
+        }
+        return null;
+    }
+
+    public Transform a;
+    public Transform b;
+    /// <summary>
+    /// 
+    /// </summary>
     void transformCamera()
     {
         //if (movePoints.Length < currentTransform)
@@ -359,6 +370,7 @@ public class liveGameSetup : MonoBehaviour {
             {
                 MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
                 preClick = false;
+                nextTarget();
             }
             if (positionCamera) //Time speed delay variables
             {
@@ -384,15 +396,22 @@ public class liveGameSetup : MonoBehaviour {
                 }
             }
         }
-        else if(!positionCamera && !rotateCamera && nextPosition)
+        else if (!positionCamera && !rotateCamera && nextPosition)
         {
             //if(movePoints[currentTransform].toProcess != null)
             //Test for stop on thing!
             Debug.Log("Requires Filter and logic loops.");
-            if(movePoints[currentTransform].toProcess != null)
+            if (movePoints[currentTransform].toProcess != null)
             {
+
                 nextPosition = false;
-                //movePoints[currentTransform + 1]
+                if (a != null)
+                {
+                    a.gameObject.GetComponent<progressionReportSystem>().OnKill();
+                    a = b;
+                    b = null;
+                    player.canFire(true);
+                }
                 //stop moving, reactivate the sissors and get chopping!
             }
 
@@ -419,9 +438,8 @@ public class liveGameSetup : MonoBehaviour {
             //}
             //if()
         }
-
-
     }
+
 
     [Header("Camera transform tuning tools")]
     public float travelSpeedOverTime = 0.2f;

@@ -76,6 +76,13 @@ public class PlayerScreenPointToClick : MonoBehaviour {
     Vector3 mousePos;
     Vector3 mouseEnd;
 
+
+    public void canFire(bool _canFire)
+    {
+        canDestroyBeard = _canFire;
+        return;
+    }
+
     //Vector3[] ray_FireLocations;
     void Update () {
         //Ray ray = cam.ScreenPointToRay(new Vector3(200, 200, 0));
