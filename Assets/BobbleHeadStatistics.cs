@@ -61,6 +61,19 @@ public class BobbleHeadStatistics : MonoBehaviour {
 
         }
     }
+
+    public void processParticlesDestructionProtocall()
+    {
+        Transform[] children = transform.GetComponentsInChildren<Transform>();
+        foreach(Transform child in children)
+        {
+            if(child.GetComponent("hairScore") != null)
+            {
+                child.GetComponent<hairScore>().dontSpawnParticlesOnDeath();
+            }
+        }
+        return;
+    }
 /*
  * Keep values for failure to shave
  * Keep value of points for success to shave

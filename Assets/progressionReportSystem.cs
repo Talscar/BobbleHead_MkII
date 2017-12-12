@@ -29,12 +29,17 @@ public class progressionReportSystem : MonoBehaviour {
         /// Requires way to spawn in Bobble heads!
 	}
 
+    //bool OnDestroy_DontEmitParticles = false;
     [SerializeField]
     private GameObject instantiatedReference;
     public void OnKill()
     {
-        if(instantiatedReference != null)
+        if (instantiatedReference != null)
+        {
+            //OnDestroy_DontEmitParticles = true;
+            instantiatedReference.GetComponentInChildren<BobbleHeadStatistics>().processParticlesDestructionProtocall();
             Destroy(instantiatedReference);
+        }
         instantiatedReference = null;
         return;
     }

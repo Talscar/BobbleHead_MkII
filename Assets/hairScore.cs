@@ -17,6 +17,11 @@ public class hairScore : MonoBehaviour {
         ParticleEmmiter_LifeTime = (particleSystem_New.duration + particleSystem_New.startLifetime); //May require a percent variable.
     }
 
+    public void dontSpawnParticlesOnDeath()
+    {
+        ParticleEmmiter = null;
+        return;
+    }
     /// <summary>
     /// Tells the hair it was hit and requires to process it's own death.
     /// </summary>
@@ -37,8 +42,11 @@ public class hairScore : MonoBehaviour {
 
     void OnDestroy()
     {
-        GameObject newParticle = Instantiate(ParticleEmmiter, transform.position, transform.rotation);
-        Destroy(newParticle, ParticleEmmiter_LifeTime);
+        if (ParticleEmmiter != null)
+        {
+            GameObject newParticle = Instantiate(ParticleEmmiter, transform.position, transform.rotation);
+            Destroy(newParticle, ParticleEmmiter_LifeTime);
+        }
     }
 
 	//// Use this for initialization

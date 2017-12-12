@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerScreenPointToClick : MonoBehaviour {
     //GameObject capsuleCasting_Brush;
@@ -20,7 +21,16 @@ public class PlayerScreenPointToClick : MonoBehaviour {
         [SerializeField] public int facesDone;
         [SerializeField] public int facesSkipped;
     }
+    public void nextHead(bool wasSkipped)
+    {
+        if (wasSkipped)
+            myScore.facesSkipped++;
+        else
+            myScore.facesDone++;
+        return;
+    }
     [SerializeField] public scoreKeeping myScore;
+    public Text scoreKeeping_Text;
     /* Keep score of hairs cut and get value from the head
      * 
      * 
@@ -132,6 +142,16 @@ public class PlayerScreenPointToClick : MonoBehaviour {
             }
                 //Instantiate(particle, transform.position, transform.rotation);
         }
+
+        if (scoreKeeping_Text != null)
+        {
+            scoreKeeping_Text.text = "";
+            scoreKeeping_Text.text += "Point: " + myScore.points + "\n" + "Shaved: " + (myScore.Successful_hairsCut + myScore.Unsuccessful_hairsCut) + "\n" + "Faces Skipped: " + myScore.facesSkipped + "\n" + "Faces Completed: " + myScore.facesDone + "\n";
+        }
+        //Time for this run
+        //How many faces I completed
+        //How many faces I Skipped!
+
     }
 
     private bool canDestroyBeard = false;

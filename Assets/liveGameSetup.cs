@@ -312,10 +312,12 @@ public class liveGameSetup : MonoBehaviour {
         //{
         //    if(nextTransform.toProcess != null)
         //    {
-                //Spawn it in!
-                //Get the new thing to destroy and set as transform B!
-                //b = nextTransform.toProcess.OnRespawn();
-                b = returnNewScriptSpawner(1);
+        //Spawn it in!
+        //Get the new thing to destroy and set as transform B!
+        //b = nextTransform.toProcess.OnRespawn();
+        Debug.LogError(b + " does return not null?");
+                b = returnNewScriptSpawner(0);
+        Debug.LogError(b + " does return not null?");
         //    }
         //}
         return;
@@ -339,13 +341,15 @@ public class liveGameSetup : MonoBehaviour {
 
         while(i < movePoints.Length)
         {
-            if(newCurrentTransform + i > movePoints.Length)
+            if(newCurrentTransform + i > movePoints.Length - 1)
             {
                 newCurrentTransform = 0 - i;
                 //newCurrentTransform = newCurrentTransform;
             }
+            Debug.Log("Transform compaired Current:Length = " + (newCurrentTransform + i) + " : " + movePoints.Length);
             if (movePoints[newCurrentTransform + i].toProcess != null)
             {
+                b_Position = newCurrentTransform + i;
                 return movePoints[newCurrentTransform + i].toProcess.OnRespawn();
             }
             //newCurrentTransform++;
@@ -356,6 +360,7 @@ public class liveGameSetup : MonoBehaviour {
 
     public Transform a;
     public Transform b;
+    public int b_Position;
     /// <summary>
     /// 
     /// </summary>
@@ -372,7 +377,9 @@ public class liveGameSetup : MonoBehaviour {
             {
                 MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
                 preClick = false;
-                nextTarget();
+                if (b == null)
+                    nextTarget();
+
             }
             if (positionCamera) //Time speed delay variables
             {
@@ -398,24 +405,26 @@ public class liveGameSetup : MonoBehaviour {
                 }
             }
         }
-        else if (!positionCamera && !rotateCamera && nextPosition)
+        else if (!positionCamera && !rotateCamera && nextPosition) //Don,t move, don't rotate, go to next position!
         {
             //if(movePoints[currentTransform].toProcess != null)
             //Test for stop on thing!
             Debug.Log("Requires Filter and logic loops.");
-            if (movePoints[currentTransform].toProcess != null)
-            {
-
-                nextPosition = false;
-                if (a && b != null)
+            if (currentTransform == b_Position)
+                if (movePoints[currentTransform].toProcess != null)
                 {
-                    a.gameObject.GetComponent<progressionReportSystem>().OnKill();
-                    a = b;
-                    b = null;
-                    player.canFire(true);
+
+                    nextPosition = false;
+                    if (a && b != null)
+                    {
+                        Debug.LogError("Break point! - Kill's the A Position NPC...");
+                        a.gameObject.GetComponent<progressionReportSystem>().OnKill();
+                        a = b;
+                        b = null;
+                        player.canFire(true);
+                    }
+                    //stop moving, reactivate the sissors and get chopping!
                 }
-                //stop moving, reactivate the sissors and get chopping!
-            }
 
 
             positionCamera = true;
@@ -432,7 +441,7 @@ public class liveGameSetup : MonoBehaviour {
             }
             else
                 currentTransform = 0;
-
+            preClick = true;
 
             //else
             //{
@@ -442,6 +451,16 @@ public class liveGameSetup : MonoBehaviour {
         }
     }
 
+    public void skipHead()
+    {
+        mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(true);
+        nextPosition = true;
+    }
+    public void headCompleted()
+    {
+        mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(false);
+        nextPosition = true;
+    }
 
     [Header("Camera transform tuning tools")]
     public float travelSpeedOverTime = 0.2f;
@@ -449,7 +468,7 @@ public class liveGameSetup : MonoBehaviour {
     public float timeSpeedDelayVariblesBetweenTransitions = 1.6f;
     [SerializeField] private float MoveAtTime = 0;
     [Header("To be Private variables")]
-    public bool nextPosition = false;
+    public bool nextPosition = true;
     public bool positionCamera = false;
     public bool rotateCamera = false;
     public int currentTransform = 0;
