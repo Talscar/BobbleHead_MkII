@@ -33,15 +33,21 @@ public class progressionReportSystem : MonoBehaviour {
     private GameObject instantiatedReference;
     public void OnKill()
     {
-        Destroy(instantiatedReference);
+        if(instantiatedReference != null)
+            Destroy(instantiatedReference);
+        instantiatedReference = null;
         return;
     }
 
     public Transform OnRespawn()
     {
-        int rng = Random.Range(0, MultipleHeadsToShave.Length);
-        instantiatedReference = Instantiate(MultipleHeadsToShave[rng], transform);
-        return this.transform;
+        if (instantiatedReference == null)
+        {
+            int rng = Random.Range(0, MultipleHeadsToShave.Length);
+            instantiatedReference = Instantiate(MultipleHeadsToShave[rng], transform);
+            return this.transform;
+        }
+        else return null;
     }
 
 	// Update is called once per frame

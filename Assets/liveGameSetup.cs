@@ -18,12 +18,13 @@ public class liveGameSetup : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        a = returnNewScriptSpawner();
+
         Transform[] children = GetComponentsInChildren<Transform>();
         mainCamera = Camera.main.gameObject.transform;
         player = mainCamera.GetComponent<PlayerScreenPointToClick>();
 
         transformFilter();
+        a = returnNewScriptSpawner(0);
 
         mainTransform(movePoints[movePoints_Location].moveTo, false);
     }
@@ -170,6 +171,7 @@ public class liveGameSetup : MonoBehaviour {
             ////////////    children[highestNumericValue] = child;
             ////////////}
         }
+        return;
         }
 
     int returnNewTransform(Transform[] transforms, int findMe)
@@ -306,16 +308,16 @@ public class liveGameSetup : MonoBehaviour {
 
         //movePoints
         //foreach (levelProgression thisSpawner in movePoints[].toProcess)
-        foreach (levelProgression nextTransform in movePoints)
-        {
-            if(nextTransform.toProcess != null)
-            {
+        //foreach (levelProgression nextTransform in movePoints)
+        //{
+        //    if(nextTransform.toProcess != null)
+        //    {
                 //Spawn it in!
                 //Get the new thing to destroy and set as transform B!
                 //b = nextTransform.toProcess.OnRespawn();
-                b = returnNewScriptSpawner();
-            }
-        }
+                b = returnNewScriptSpawner(1);
+        //    }
+        //}
         return;
     }
 
@@ -323,12 +325,12 @@ public class liveGameSetup : MonoBehaviour {
     /// Returns the Transform in the order of selection to do stuff with.
     /// </summary>
     /// <returns></returns>
-    Transform returnNewScriptSpawner()
+    Transform returnNewScriptSpawner(int newCurrentTransform)
     {
 
         //currentTransform
         int i = 0;
-        int newCurrentTransform = currentTransform;
+        newCurrentTransform += currentTransform;
         ///a = newCurrentTransform - I
         /// 
         // -37 + i = 0;
@@ -405,7 +407,7 @@ public class liveGameSetup : MonoBehaviour {
             {
 
                 nextPosition = false;
-                if (a != null)
+                if (a && b != null)
                 {
                     a.gameObject.GetComponent<progressionReportSystem>().OnKill();
                     a = b;
