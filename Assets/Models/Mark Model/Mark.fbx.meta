@@ -1,54 +1,32 @@
 fileFormatVersion: 2
-guid: 4474d4a583da6164d973cd12587c0da5
-timeCreated: 1513330328
+guid: f1ac5004fd30a9b42a5871ab3f121313
+timeCreated: 1513074945
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Mark_Beard
-    100004: Mark_Body
-    100006: Mark_Glasses
-    100008: Mark_Glasses_Lenses
-    100010: Mark_Hair
-    100012: Mark_Head
-    400000: //RootNode
-    400002: Mark_Beard
-    400004: Mark_Body
-    400006: Mark_Glasses
-    400008: Mark_Glasses_Lenses
-    400010: Mark_Hair
-    400012: Mark_Head
-    2300000: Mark_Beard
-    2300002: Mark_Body
-    2300004: Mark_Glasses
-    2300006: Mark_Glasses_Lenses
-    2300008: Mark_Hair
-    2300010: Mark_Head
-    3300000: Mark_Beard
-    3300002: Mark_Body
-    3300004: Mark_Glasses
-    3300006: Mark_Glasses_Lenses
-    3300008: Mark_Hair
-    3300010: Mark_Head
-    4300000: Mark_Head
-    4300002: Mark_Hair
-    4300004: Mark_Body
-    4300006: Mark_Glasses
-    4300008: Mark_Glasses_Lenses
-    4300010: Mark_Beard
+    100000: Beard
+    100002: Body
+    100004: Glasses_Lenses
+    100006: //RootNode
+    400000: Beard
+    400002: Body
+    400004: Glasses_Lenses
+    400006: //RootNode
+    2300000: Beard
+    2300002: Body
+    2300004: Glasses_Lenses
+    3300000: Beard
+    3300002: Body
+    3300004: Glasses_Lenses
+    4300000: Beard
+    4300002: Body
+    4300004: Glasses_Lenses
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: c46f7861cac5dfe47965c9e08e3aef92, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -61,7 +39,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
