@@ -4125,8 +4125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 693d4d14e35f7c644a0c1b8e6bb693d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleDeathSmokeBurst: {fileID: 0}
-  offset_Self_Destruction: 1.5
 --- !u!114 &114507599900490844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4244,14 +4242,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceToRelocate: {fileID: 4238056984556070}
-  Sensitivity_Options:
-    maxRange: 0
-    maxRotation: 0
-    eular_Rotation_Origin: {x: 0, y: 0, z: 0}
-    weighing_Force: 0
-    bobbleReturn_Force: 0
-    constant_Force: 0
-  skip: {fileID: 0}
 --- !u!114 &114645612784149326
 MonoBehaviour:
   m_ObjectHideFlags: 1
