@@ -891,7 +891,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1019303749
+  randomSeed: -1331210474
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5431,12 +5431,13 @@ MonoBehaviour:
   b_Position: 0
   travelSpeedOverTime: 0.2
   distanceSensitivity: 0.3
-  timeSpeedDelayVariblesBetweenTransitions: 0.6
+  timeSpeedDelayVariblesBetweenTransitions: 0.4
   MoveAtTime: 0
   nextPosition: 0
   positionCamera: 1
   rotateCamera: 0
   currentTransform: 0
+  preClick: 1
 --- !u!1001 &2043734347
 Prefab:
   m_ObjectHideFlags: 0

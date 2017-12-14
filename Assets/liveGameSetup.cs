@@ -299,29 +299,17 @@ public class liveGameSetup : MonoBehaviour {
     /// When my current FaceBobble_Relocator target is shaved or skipped... Function activates to inform this script its time to move to the next target!
     /// Process 2.Start
     /// </summary>
-    public void nextTarget()
-    {
-        Debug.Log("Next target!");
-        player.canFire(false);
-        nextPosition = true;
-        //preClick = true;
+    //public void nextTarget()
+    //{
+    //    Debug.Log("Next target!");
+    //    player.canFire(false);
+    //    nextPosition = true;
 
-        //movePoints
-        //foreach (levelProgression thisSpawner in movePoints[].toProcess)
-        //foreach (levelProgression nextTransform in movePoints)
-        //{
-        //    if(nextTransform.toProcess != null)
-        //    {
-        //Spawn it in!
-        //Get the new thing to destroy and set as transform B!
-        //b = nextTransform.toProcess.OnRespawn();
-        Debug.LogError(b + " does return not null?");
-                b = returnNewScriptSpawner(0);
-        Debug.LogError(b + " does return not null?");
-        //    }
-        //}
-        return;
-    }
+    //    //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
+    //            b = returnNewScriptSpawner(1);
+
+    //    return;
+    //}
 
     /// <summary>
     /// Returns the Transform in the order of selection to do stuff with.
@@ -377,8 +365,15 @@ public class liveGameSetup : MonoBehaviour {
             {
                 MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
                 preClick = false;
+                player.canFire(false);
                 if (b == null)
-                    nextTarget();
+                {
+                    nextPosition = true;
+
+                    //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
+                    b = returnNewScriptSpawner(1);
+                }
+                    //nextTarget();
 
             }
             if (positionCamera) //Time speed delay variables
@@ -422,6 +417,7 @@ public class liveGameSetup : MonoBehaviour {
                         a = b;
                         b = null;
                         player.canFire(true);
+                        preClick = true; //Solve the glitching? YES
                     }
                     //stop moving, reactivate the sissors and get chopping!
                 }
@@ -441,8 +437,8 @@ public class liveGameSetup : MonoBehaviour {
             }
             else
                 currentTransform = 0;
-            preClick = true;
 
+            //preClick = true; //Makes spawners work? YES
             //else
             //{
             //    currentTransform = 0;
@@ -474,7 +470,7 @@ public class liveGameSetup : MonoBehaviour {
     public int currentTransform = 0;
     // Update is called once per frame
 
-    bool preClick = true;
+    public bool preClick = true;
 
 
 	void Update ()

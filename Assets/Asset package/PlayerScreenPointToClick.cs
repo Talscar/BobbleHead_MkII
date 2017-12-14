@@ -89,7 +89,10 @@ public class PlayerScreenPointToClick : MonoBehaviour {
 
     public void canFire(bool _canFire)
     {
-        canDestroyBeard = _canFire;
+        if (gameManagerScript.running == true)
+            canDestroyBeard = _canFire;
+        else
+            canDestroyBeard = false;
         return;
     }
 
@@ -110,7 +113,7 @@ public class PlayerScreenPointToClick : MonoBehaviour {
         //}
 
 
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("Fire1") && canDestroyBeard)
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition + new Vector3(0, 0, 0));
@@ -121,7 +124,7 @@ public class PlayerScreenPointToClick : MonoBehaviour {
                 {
                     Debug.DrawRay(ray.origin, ray.direction * 10, Color.cyan, 15);
                     Debug.Log("Before destroying thing");
-                    if (hit.collider.gameObject.tag == "facialHair" && canDestroyBeard)
+                    if (hit.collider.gameObject.tag == "facialHair"/* && canDestroyBeard*/)
                     {
                         Debug.Log("Destroy thing");
                         hit.collider.gameObject.GetComponent<hairScore>().IAmHit(this);
