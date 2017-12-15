@@ -371,9 +371,11 @@ public class liveGameSetup : MonoBehaviour {
                     nextPosition = true;
 
                     //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
+                    Debug.LogWarning("BUG Stagers due to following line of code.");
                     b = returnNewScriptSpawner(1);
+                    //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
                 }
-                    //nextTarget();
+                //nextTarget();
 
             }
             if (positionCamera) //Time speed delay variables
@@ -383,8 +385,8 @@ public class liveGameSetup : MonoBehaviour {
                 float distance = Vector3.Distance(mainCamera.position, movePoints[currentTransform].moveTo.position);
                 if (distance < distanceSensitivity)
                 {
-                    positionCamera = false;
                     rotateCamera = true;
+                    positionCamera = false;
                     MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
                 }
             }
