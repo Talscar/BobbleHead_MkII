@@ -349,6 +349,8 @@ public class liveGameSetup : MonoBehaviour {
     public Transform a;
     public Transform b;
     public int b_Position;
+
+    //bool go = false;
     /// <summary>
     /// 
     /// </summary>
@@ -363,9 +365,10 @@ public class liveGameSetup : MonoBehaviour {
         {
             if (preClick)
             {
-                MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
+
                 preClick = false;
                 player.canFire(false);
+                if(rotateCamera || positionCamera)
                 if (b == null)
                 {
                     nextPosition = true;
@@ -373,12 +376,14 @@ public class liveGameSetup : MonoBehaviour {
                     //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
                     Debug.LogWarning("BUG Stagers due to following line of code.");
                     b = returnNewScriptSpawner(1);
+
                     //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
                 }
+                MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
                 //nextTarget();
 
             }
-            if (positionCamera) //Time speed delay variables
+            else if (positionCamera) //Time speed delay variables
             {
 
                 mainCamera.position = Vector3.Lerp(mainCamera.position, movePoints[currentTransform].moveTo.position, travelSpeedOverTime);
