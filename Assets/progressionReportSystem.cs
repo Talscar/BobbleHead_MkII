@@ -29,19 +29,30 @@ public class progressionReportSystem : MonoBehaviour {
         /// Requires way to spawn in Bobble heads!
 	}
 
+    //bool OnDestroy_DontEmitParticles = false;
     [SerializeField]
     private GameObject instantiatedReference;
     public void OnKill()
     {
-        Destroy(instantiatedReference);
+        if (instantiatedReference != null)
+        {
+            //OnDestroy_DontEmitParticles = true;
+            instantiatedReference.GetComponentInChildren<BobbleHeadStatistics>().processParticlesDestructionProtocall();
+            Destroy(instantiatedReference);
+        }
+        instantiatedReference = null;
         return;
     }
 
     public Transform OnRespawn()
     {
-        int rng = Random.Range(0, MultipleHeadsToShave.Length);
-        instantiatedReference = Instantiate(MultipleHeadsToShave[rng], transform);
-        return this.transform;
+        if (instantiatedReference == null)
+        {
+            int rng = Random.Range(0, MultipleHeadsToShave.Length);
+            instantiatedReference = Instantiate(MultipleHeadsToShave[rng], transform);
+            return this.transform;
+        }
+        else return null;
     }
 
 	// Update is called once per frame

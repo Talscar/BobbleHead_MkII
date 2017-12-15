@@ -18,12 +18,13 @@ public class liveGameSetup : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        a = returnNewScriptSpawner();
+
         Transform[] children = GetComponentsInChildren<Transform>();
         mainCamera = Camera.main.gameObject.transform;
         player = mainCamera.GetComponent<PlayerScreenPointToClick>();
 
         transformFilter();
+        a = returnNewScriptSpawner(0);
 
         mainTransform(movePoints[movePoints_Location].moveTo, false);
     }
@@ -170,6 +171,7 @@ public class liveGameSetup : MonoBehaviour {
             ////////////    children[highestNumericValue] = child;
             ////////////}
         }
+        return;
         }
 
     int returnNewTransform(Transform[] transforms, int findMe)
@@ -297,38 +299,28 @@ public class liveGameSetup : MonoBehaviour {
     /// When my current FaceBobble_Relocator target is shaved or skipped... Function activates to inform this script its time to move to the next target!
     /// Process 2.Start
     /// </summary>
-    public void nextTarget()
-    {
-        Debug.Log("Next target!");
-        player.canFire(false);
-        nextPosition = true;
-        //preClick = true;
+    //public void nextTarget()
+    //{
+    //    Debug.Log("Next target!");
+    //    player.canFire(false);
+    //    nextPosition = true;
 
-        //movePoints
-        //foreach (levelProgression thisSpawner in movePoints[].toProcess)
-        foreach (levelProgression nextTransform in movePoints)
-        {
-            if(nextTransform.toProcess != null)
-            {
-                //Spawn it in!
-                //Get the new thing to destroy and set as transform B!
-                //b = nextTransform.toProcess.OnRespawn();
-                b = returnNewScriptSpawner();
-            }
-        }
-        return;
-    }
+    //    //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
+    //            b = returnNewScriptSpawner(1);
+
+    //    return;
+    //}
 
     /// <summary>
     /// Returns the Transform in the order of selection to do stuff with.
     /// </summary>
     /// <returns></returns>
-    Transform returnNewScriptSpawner()
+    Transform returnNewScriptSpawner(int newCurrentTransform)
     {
 
         //currentTransform
         int i = 0;
-        int newCurrentTransform = currentTransform;
+        newCurrentTransform += currentTransform;
         ///a = newCurrentTransform - I
         /// 
         // -37 + i = 0;
@@ -337,13 +329,15 @@ public class liveGameSetup : MonoBehaviour {
 
         while(i < movePoints.Length)
         {
-            if(newCurrentTransform + i > movePoints.Length)
+            if(newCurrentTransform + i > movePoints.Length - 1)
             {
                 newCurrentTransform = 0 - i;
                 //newCurrentTransform = newCurrentTransform;
             }
+            Debug.Log("Transform compaired Current:Length = " + (newCurrentTransform + i) + " : " + movePoints.Length);
             if (movePoints[newCurrentTransform + i].toProcess != null)
             {
+                b_Position = newCurrentTransform + i;
                 return movePoints[newCurrentTransform + i].toProcess.OnRespawn();
             }
             //newCurrentTransform++;
@@ -354,6 +348,7 @@ public class liveGameSetup : MonoBehaviour {
 
     public Transform a;
     public Transform b;
+    public int b_Position;
     /// <summary>
     /// 
     /// </summary>
@@ -370,7 +365,18 @@ public class liveGameSetup : MonoBehaviour {
             {
                 MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
                 preClick = false;
-                nextTarget();
+                player.canFire(false);
+                if (b == null)
+                {
+                    nextPosition = true;
+
+                    //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
+                    Debug.LogWarning("BUG Stagers due to following line of code.");
+                    b = returnNewScriptSpawner(1);
+                    //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
+                }
+                //nextTarget();
+
             }
             if (positionCamera) //Time speed delay variables
             {
@@ -379,8 +385,8 @@ public class liveGameSetup : MonoBehaviour {
                 float distance = Vector3.Distance(mainCamera.position, movePoints[currentTransform].moveTo.position);
                 if (distance < distanceSensitivity)
                 {
-                    positionCamera = false;
                     rotateCamera = true;
+                    positionCamera = false;
                     MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
                 }
             }
@@ -396,24 +402,27 @@ public class liveGameSetup : MonoBehaviour {
                 }
             }
         }
-        else if (!positionCamera && !rotateCamera && nextPosition)
+        else if (!positionCamera && !rotateCamera && nextPosition) //Don,t move, don't rotate, go to next position!
         {
             //if(movePoints[currentTransform].toProcess != null)
             //Test for stop on thing!
             Debug.Log("Requires Filter and logic loops.");
-            if (movePoints[currentTransform].toProcess != null)
-            {
-
-                nextPosition = false;
-                if (a != null)
+            if (currentTransform == b_Position)
+                if (movePoints[currentTransform].toProcess != null)
                 {
-                    a.gameObject.GetComponent<progressionReportSystem>().OnKill();
-                    a = b;
-                    b = null;
-                    player.canFire(true);
+
+                    nextPosition = false;
+                    if (a && b != null)
+                    {
+                        Debug.LogError("Break point! - Kill's the A Position NPC...");
+                        a.gameObject.GetComponent<progressionReportSystem>().OnKill();
+                        a = b;
+                        b = null;
+                        player.canFire(true);
+                        preClick = true; //Solve the glitching? YES
+                    }
+                    //stop moving, reactivate the sissors and get chopping!
                 }
-                //stop moving, reactivate the sissors and get chopping!
-            }
 
 
             positionCamera = true;
@@ -431,7 +440,7 @@ public class liveGameSetup : MonoBehaviour {
             else
                 currentTransform = 0;
 
-
+            //preClick = true; //Makes spawners work? YES
             //else
             //{
             //    currentTransform = 0;
@@ -440,6 +449,16 @@ public class liveGameSetup : MonoBehaviour {
         }
     }
 
+    public void skipHead()
+    {
+        mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(true);
+        nextPosition = true;
+    }
+    public void headCompleted()
+    {
+        mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(false);
+        nextPosition = true;
+    }
 
     [Header("Camera transform tuning tools")]
     public float travelSpeedOverTime = 0.2f;
@@ -447,13 +466,13 @@ public class liveGameSetup : MonoBehaviour {
     public float timeSpeedDelayVariblesBetweenTransitions = 1.6f;
     [SerializeField] private float MoveAtTime = 0;
     [Header("To be Private variables")]
-    public bool nextPosition = false;
+    public bool nextPosition = true;
     public bool positionCamera = false;
     public bool rotateCamera = false;
     public int currentTransform = 0;
     // Update is called once per frame
 
-    bool preClick = true;
+    public bool preClick = true;
 
 
 	void Update ()

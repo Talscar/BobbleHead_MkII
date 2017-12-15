@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerScreenPointToClick : MonoBehaviour {
     //GameObject capsuleCasting_Brush;
@@ -20,7 +21,16 @@ public class PlayerScreenPointToClick : MonoBehaviour {
         [SerializeField] public int facesDone;
         [SerializeField] public int facesSkipped;
     }
+    public void nextHead(bool wasSkipped)
+    {
+        if (wasSkipped)
+            myScore.facesSkipped++;
+        else
+            myScore.facesDone++;
+        return;
+    }
     [SerializeField] public scoreKeeping myScore;
+    public Text scoreKeeping_Text;
     /* Keep score of hairs cut and get value from the head
      * 
      * 
@@ -79,7 +89,10 @@ public class PlayerScreenPointToClick : MonoBehaviour {
 
     public void canFire(bool _canFire)
     {
-        canDestroyBeard = _canFire;
+        if (gameManagerScript.running == true)
+            canDestroyBeard = _canFire;
+        else
+            canDestroyBeard = false;
         return;
     }
 
@@ -100,7 +113,7 @@ public class PlayerScreenPointToClick : MonoBehaviour {
         //}
 
 
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("Fire1") && canDestroyBeard)
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition + new Vector3(0, 0, 0));
@@ -111,7 +124,7 @@ public class PlayerScreenPointToClick : MonoBehaviour {
                 {
                     Debug.DrawRay(ray.origin, ray.direction * 10, Color.cyan, 15);
                     Debug.Log("Before destroying thing");
-                    if (hit.collider.gameObject.tag == "facialHair" && canDestroyBeard)
+                    if (hit.collider.gameObject.tag == "facialHair"/* && canDestroyBeard*/)
                     {
                         Debug.Log("Destroy thing");
                         hit.collider.gameObject.GetComponent<hairScore>().IAmHit(this);
@@ -132,6 +145,16 @@ public class PlayerScreenPointToClick : MonoBehaviour {
             }
                 //Instantiate(particle, transform.position, transform.rotation);
         }
+
+        if (scoreKeeping_Text != null)
+        {
+            scoreKeeping_Text.text = "";
+            scoreKeeping_Text.text += "Point: " + myScore.points + "\n" + "Shaved: " + (myScore.Successful_hairsCut + myScore.Unsuccessful_hairsCut) + "\n" + "Faces Skipped: " + myScore.facesSkipped + "\n" + "Faces Completed: " + myScore.facesDone + "\n";
+        }
+        //Time for this run
+        //How many faces I completed
+        //How many faces I Skipped!
+
     }
 
     private bool canDestroyBeard = false;
