@@ -479,6 +479,13 @@ public class liveGameSetup : MonoBehaviour {
 
     public bool preClick = true;
 
+    public void HairSet_Complete()
+    {
+        player.myScore.facesDone++;
+        nextPosition = true;
+        return;
+    }
+
 
 	void Update ()
     {
