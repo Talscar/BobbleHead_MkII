@@ -22,7 +22,10 @@ public class shavingSet : MonoBehaviour {
         if (childrenToShave < shavingZeroByPercent || childrenToShave <= 0)
         {
             BobbleHeadStatistics talk = transform.GetComponentInParent<BobbleHeadStatistics>();
-            talk.HairSet_Update();
+            if (talk != null)
+                talk.HairSet_Update();
+            else
+                Debug.Log("Either closing project... Or a bug has occured!");
             //Do stuff! Progress to next head!
             //Tell BobbleHeadStatistics i am done!
         }
