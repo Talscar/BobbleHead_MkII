@@ -6053,6 +6053,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2770cdf28e6bf404eae26ad3535f46f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childrenToShave: 0
+  shavingZeroByPercent: 0
 --- !u!114 &114532966285407948
 MonoBehaviour:
   m_ObjectHideFlags: 1

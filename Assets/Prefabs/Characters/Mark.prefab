@@ -6378,6 +6378,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2770cdf28e6bf404eae26ad3535f46f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childrenToShave: 0
+  shavingZeroByPercent: 0
 --- !u!114 &114380079427001302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6933,6 +6935,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2770cdf28e6bf404eae26ad3535f46f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childrenToShave: 0
+  shavingZeroByPercent: 0
 --- !u!114 &114841223997136138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7072,6 +7076,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2770cdf28e6bf404eae26ad3535f46f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childrenToShave: 0
+  shavingZeroByPercent: 0
 --- !u!114 &114947333869870464
 MonoBehaviour:
   m_ObjectHideFlags: 1

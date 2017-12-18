@@ -65,23 +65,48 @@ public class hairScore : MonoBehaviour {
             // Vector3 newPoint = transform.Transform.localPosition(this.transform.position);//(Transform)Transform.localToWorldMatrix(transform); 
             //transform.TransformPoint(0, 0, 0);//this.transform.Transform.TransformPoint(this.transform.position);        Vector3 thePosition = transform.TransformPoint(2, 0, 0);
             //Vector3 newCoordinate = new Vector3();
-            GameObject newParticle = Instantiate(ParticleEmmiter, this.transform.localPosition, gameObject.transform.localRotation);
+            Vector3 newCoordinates = (this.transform.position) + centerPoint;
+            Debug.LogWarning(newCoordinates + " - to this set: " + centerPoint + " : " + transform.position);
+            Debug.DrawRay(this.transform.position, new Vector3(10, 10, 10), Color.yellow, 99f);
+            GameObject newParticle = Instantiate(ParticleEmmiter, /*(this.transform.position) + centerPoint*/newCoordinates/*returnMyCoordinatesInWorldSpaceToTransform(transform)*/, gameObject.transform.localRotation);
+            newParticle.transform.parent = this.transform;
             Destroy(newParticle, ParticleEmmiter_LifeTime);
         }
     }
 
-    //Transform returnMyCoordinatesInWorldSpaceToTransform()
-    //{
+    Vector3 returnMyCoordinatesInWorldSpaceToTransform(Transform parentOfChild)
+    {
+        Vector3 coordinates = new Vector3(0, 0, 0);
+        //Vector3 coordinates = parentOfChild;
+        while(parentOfChild != null)
+        {
+            coordinates = coordinates + parentOfChild.transform.position;
+            //if(parentOfChild.GetComponentInParent("Transform") != null)
+                parentOfChild = parentOfChild.GetComponentInParent<Transform>();
+        }
+        return coordinates;
+    }
 
-    //    return null;
+    //
+
+    Vector3 centerPoint;
+    // Use this for initialization
+    void Start()
+    {
+        Mesh mesh = GetComponent<MeshFilter>().mesh;
+        Vector3[] vertices = mesh.vertices;
+        centerPoint = vertices[1];
+        //int i = 0;
+        //while (i < vertices.Length)
+        //{
+        //    vertices[i] += Vector3.up * Time.deltaTime;
+        //    i++;
+        //}
+        Debug.Log("Temporary fix for particles");
+    }
+
+    //// Update is called once per frame
+    //void Update () {
+
     //}
-	//// Use this for initialization
-	//void Start () {
-		
-	//}
-	
-	//// Update is called once per frame
-	//void Update () {
-		
-	//}
 }
