@@ -61,11 +61,20 @@ public class hairScore : MonoBehaviour {
             {
                 toShaveSet.hairShaving_Score_Update();
             }
-            GameObject newParticle = Instantiate(ParticleEmmiter, transform.position, transform.rotation);
+            //Transform.localToWorldMatrix
+            // Vector3 newPoint = transform.Transform.localPosition(this.transform.position);//(Transform)Transform.localToWorldMatrix(transform); 
+            //transform.TransformPoint(0, 0, 0);//this.transform.Transform.TransformPoint(this.transform.position);        Vector3 thePosition = transform.TransformPoint(2, 0, 0);
+            //Vector3 newCoordinate = new Vector3();
+            GameObject newParticle = Instantiate(ParticleEmmiter, this.transform.localPosition, gameObject.transform.localRotation);
             Destroy(newParticle, ParticleEmmiter_LifeTime);
         }
     }
 
+    //Transform returnMyCoordinatesInWorldSpaceToTransform()
+    //{
+
+    //    return null;
+    //}
 	//// Use this for initialization
 	//void Start () {
 		
