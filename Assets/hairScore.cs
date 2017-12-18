@@ -11,10 +11,23 @@ public class hairScore : MonoBehaviour {
     public GameObject ParticleEmmiter;
     [SerializeField] private float ParticleEmmiter_LifeTime;
 
-    void Start()
+    shavingSet toShaveSet;
+
+    void Awake()
     {
         ParticleSystem particleSystem_New = ParticleEmmiter.GetComponent<ParticleSystem>();
         ParticleEmmiter_LifeTime = (particleSystem_New.duration + particleSystem_New.startLifetime); //May require a percent variable.
+
+        toShaveSet = transform.GetComponentInParent<shavingSet>();
+        if(!dontCutThis)
+        {
+            if (toShaveSet != null)
+            {
+                toShaveSet.hairShave_Start();
+            }
+            else
+                Debug.LogError("NO PARENT FOUND!!!");
+        }
     }
 
     public void dontSpawnParticlesOnDeath()
@@ -44,6 +57,10 @@ public class hairScore : MonoBehaviour {
     {
         if (ParticleEmmiter != null)
         {
+            if(!dontCutThis)
+            {
+                toShaveSet.hairShaving_Score_Update();
+            }
             GameObject newParticle = Instantiate(ParticleEmmiter, transform.position, transform.rotation);
             Destroy(newParticle, ParticleEmmiter_LifeTime);
         }

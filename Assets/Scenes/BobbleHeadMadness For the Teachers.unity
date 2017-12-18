@@ -4895,15 +4895,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4556138354982542, guid: bbeb3cbeefc66d042aea7c574781c72c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -37.24344
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4556138354982542, guid: bbeb3cbeefc66d042aea7c574781c72c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.7212353
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4556138354982542, guid: bbeb3cbeefc66d042aea7c574781c72c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -6.865658
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4556138354982542, guid: bbeb3cbeefc66d042aea7c574781c72c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4925,8 +4925,58 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1374665542611786, guid: bbeb3cbeefc66d042aea7c574781c72c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bbeb3cbeefc66d042aea7c574781c72c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1591299752
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005485435180636, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1608710029
 GameObject:
@@ -5448,420 +5498,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1948416846}
---- !u!1001 &2004543259
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -30.133276
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -2.7212353
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -7.0778465
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187823947233448, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114760239238865486, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114158951947299452, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114901889473100794, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114670714852521032, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114129389699289940, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114532966285407948, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114640304851663002, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114820195082215608, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114969573852570904, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114948264146986338, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114838058160089660, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114693283477545902, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114872909385973722, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114123011447951190, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114752621954377690, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114243538416841146, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114546744499520046, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114363117494205748, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114892558572313740, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114885438345213158, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114969758867488190, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114983563128135280, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114803381545153154, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114483216869853668, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114776855866720760, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114757145406267226, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114268411085859238, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114807689939865034, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114156698482657650, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114415868114920134, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114305835522784824, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114199236298156296, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114463147501136540, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114634883574937304, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114640726232701816, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114795162902577796, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114576829317077616, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114452510903174148, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114145257035891046, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114616537038566734, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114785575982442020, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114317686176965282, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114482754738875386, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114425743472603168, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114009427210936174, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114407076374151364, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114324633225620568, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114678155077913684, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114413499474620780, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114595113358928500, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114632358063382314, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114699589929084196, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114704807307844864, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114782831036247156, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114778668278577828, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114212125854461254, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114809403430359688, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114940569272715774, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114059152262339408, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114665125032100316, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114564880331473050, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    - target: {fileID: 114131745301090852, guid: f17e4c16addf8174d8e034a4508f53d1,
-        type: 2}
-      propertyPath: ParticleEmmiter
-      value: 
-      objectReference: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
-        type: 2}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f17e4c16addf8174d8e034a4508f53d1, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2029864208
 GameObject:
   m_ObjectHideFlags: 0
