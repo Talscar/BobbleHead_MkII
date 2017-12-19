@@ -59,6 +59,24 @@ ModelImporter:
     100102: polySurface7
     100104: polySurface8
     100106: polySurface9
+    100108: Chris_beard_01
+    100110: Chris_beard_010
+    100112: Chris_beard_011
+    100114: Chris_beard_012
+    100116: Chris_beard_013
+    100118: Chris_beard_014
+    100120: Chris_beard_015
+    100122: Chris_beard_016
+    100124: Chris_beard_018
+    100126: Chris_beard_019
+    100128: Chris_beard_02
+    100130: Chris_beard_03
+    100132: Chris_beard_04
+    100134: Chris_beard_05
+    100136: Chris_beard_06
+    100138: Chris_beard_07
+    100140: Chris_beard_08
+    100142: Chris_beard_09
     400000: //RootNode
     400002: Chris_beard
     400004: Chris_body
@@ -113,6 +131,24 @@ ModelImporter:
     400102: polySurface7
     400104: polySurface8
     400106: polySurface9
+    400108: Chris_beard_01
+    400110: Chris_beard_010
+    400112: Chris_beard_011
+    400114: Chris_beard_012
+    400116: Chris_beard_013
+    400118: Chris_beard_014
+    400120: Chris_beard_015
+    400122: Chris_beard_016
+    400124: Chris_beard_018
+    400126: Chris_beard_019
+    400128: Chris_beard_02
+    400130: Chris_beard_03
+    400132: Chris_beard_04
+    400134: Chris_beard_05
+    400136: Chris_beard_06
+    400138: Chris_beard_07
+    400140: Chris_beard_08
+    400142: Chris_beard_09
     2300000: Chris_body
     2300002: Chris_hair_low
     2300004: Chris_head
@@ -165,6 +201,24 @@ ModelImporter:
     2300098: polySurface7
     2300100: polySurface8
     2300102: polySurface9
+    2300104: Chris_beard_01
+    2300106: Chris_beard_010
+    2300108: Chris_beard_011
+    2300110: Chris_beard_012
+    2300112: Chris_beard_013
+    2300114: Chris_beard_014
+    2300116: Chris_beard_015
+    2300118: Chris_beard_016
+    2300120: Chris_beard_018
+    2300122: Chris_beard_019
+    2300124: Chris_beard_02
+    2300126: Chris_beard_03
+    2300128: Chris_beard_04
+    2300130: Chris_beard_05
+    2300132: Chris_beard_06
+    2300134: Chris_beard_07
+    2300136: Chris_beard_08
+    2300138: Chris_beard_09
     3300000: Chris_body
     3300002: Chris_hair_low
     3300004: Chris_head
@@ -217,6 +271,24 @@ ModelImporter:
     3300098: polySurface7
     3300100: polySurface8
     3300102: polySurface9
+    3300104: Chris_beard_01
+    3300106: Chris_beard_010
+    3300108: Chris_beard_011
+    3300110: Chris_beard_012
+    3300112: Chris_beard_013
+    3300114: Chris_beard_014
+    3300116: Chris_beard_015
+    3300118: Chris_beard_016
+    3300120: Chris_beard_018
+    3300122: Chris_beard_019
+    3300124: Chris_beard_02
+    3300126: Chris_beard_03
+    3300128: Chris_beard_04
+    3300130: Chris_beard_05
+    3300132: Chris_beard_06
+    3300134: Chris_beard_07
+    3300136: Chris_beard_08
+    3300138: Chris_beard_09
     4300000: Chris_body
     4300002: Chris_head
     4300004: Chris_hair_low
@@ -269,13 +341,31 @@ ModelImporter:
     4300098: polySurface51
     4300100: polySurface52
     4300102: polySurface33
+    4300104: Chris_beard_01
+    4300106: Chris_beard_02
+    4300108: Chris_beard_03
+    4300110: Chris_beard_04
+    4300112: Chris_beard_05
+    4300114: Chris_beard_06
+    4300116: Chris_beard_07
+    4300118: Chris_beard_08
+    4300120: Chris_beard_09
+    4300122: Chris_beard_010
+    4300124: Chris_beard_011
+    4300126: Chris_beard_012
+    4300128: Chris_beard_013
+    4300130: Chris_beard_014
+    4300132: Chris_beard_015
+    4300134: Chris_beard_016
+    4300136: Chris_beard_018
+    4300138: Chris_beard_019
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert4
-    second: {fileID: 2100000, guid: 258e4fd1eceb70449bb412c1a15a6510, type: 2}
+    second: {fileID: 2100000, guid: 8666e49e0d464e241b800f986db57431, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

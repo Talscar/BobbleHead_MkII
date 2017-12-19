@@ -59,6 +59,29 @@ ModelImporter:
     100102: polySurface7
     100104: polySurface8
     100106: polySurface9
+    100108: Adam_beard
+    100110: Adam_beard_01
+    100112: Adam_beard_010
+    100114: Adam_beard_011
+    100116: Adam_beard_012
+    100118: Adam_beard_013
+    100120: Adam_beard_014
+    100122: Adam_beard_015
+    100124: Adam_beard_016
+    100126: Adam_beard_017
+    100128: Adam_beard_018
+    100130: Adam_beard_019
+    100132: Adam_beard_02
+    100134: Adam_beard_020
+    100136: Adam_beard_021
+    100138: Adam_beard_022
+    100140: Adam_beard_03
+    100142: Adam_beard_04
+    100144: Adam_beard_05
+    100146: Adam_beard_06
+    100148: Adam_beard_07
+    100150: Adam_beard_08
+    100152: Adam_beard_09
     400000: //RootNode
     400002: Adam_beard_low
     400004: Adam_body
@@ -113,6 +136,29 @@ ModelImporter:
     400102: polySurface7
     400104: polySurface8
     400106: polySurface9
+    400108: Adam_beard
+    400110: Adam_beard_01
+    400112: Adam_beard_010
+    400114: Adam_beard_011
+    400116: Adam_beard_012
+    400118: Adam_beard_013
+    400120: Adam_beard_014
+    400122: Adam_beard_015
+    400124: Adam_beard_016
+    400126: Adam_beard_017
+    400128: Adam_beard_018
+    400130: Adam_beard_019
+    400132: Adam_beard_02
+    400134: Adam_beard_020
+    400136: Adam_beard_021
+    400138: Adam_beard_022
+    400140: Adam_beard_03
+    400142: Adam_beard_04
+    400144: Adam_beard_05
+    400146: Adam_beard_06
+    400148: Adam_beard_07
+    400150: Adam_beard_08
+    400152: Adam_beard_09
     2300000: Adam_body
     2300002: Adam_hair_high
     2300004: Adam_head
@@ -165,6 +211,28 @@ ModelImporter:
     2300098: polySurface7
     2300100: polySurface8
     2300102: polySurface9
+    2300104: Adam_beard_01
+    2300106: Adam_beard_010
+    2300108: Adam_beard_011
+    2300110: Adam_beard_012
+    2300112: Adam_beard_013
+    2300114: Adam_beard_014
+    2300116: Adam_beard_015
+    2300118: Adam_beard_016
+    2300120: Adam_beard_017
+    2300122: Adam_beard_018
+    2300124: Adam_beard_019
+    2300126: Adam_beard_02
+    2300128: Adam_beard_020
+    2300130: Adam_beard_021
+    2300132: Adam_beard_022
+    2300134: Adam_beard_03
+    2300136: Adam_beard_04
+    2300138: Adam_beard_05
+    2300140: Adam_beard_06
+    2300142: Adam_beard_07
+    2300144: Adam_beard_08
+    2300146: Adam_beard_09
     3300000: Adam_body
     3300002: Adam_hair_high
     3300004: Adam_head
@@ -217,6 +285,28 @@ ModelImporter:
     3300098: polySurface7
     3300100: polySurface8
     3300102: polySurface9
+    3300104: Adam_beard_01
+    3300106: Adam_beard_010
+    3300108: Adam_beard_011
+    3300110: Adam_beard_012
+    3300112: Adam_beard_013
+    3300114: Adam_beard_014
+    3300116: Adam_beard_015
+    3300118: Adam_beard_016
+    3300120: Adam_beard_017
+    3300122: Adam_beard_018
+    3300124: Adam_beard_019
+    3300126: Adam_beard_02
+    3300128: Adam_beard_020
+    3300130: Adam_beard_021
+    3300132: Adam_beard_022
+    3300134: Adam_beard_03
+    3300136: Adam_beard_04
+    3300138: Adam_beard_05
+    3300140: Adam_beard_06
+    3300142: Adam_beard_07
+    3300144: Adam_beard_08
+    3300146: Adam_beard_09
     4300000: Adam_body
     4300002: Adam_head
     4300004: Adam_hair_high
@@ -269,6 +359,28 @@ ModelImporter:
     4300098: polySurface47
     4300100: polySurface48
     4300102: polySurface49
+    4300104: Adam_beard_01
+    4300106: Adam_beard_02
+    4300108: Adam_beard_03
+    4300110: Adam_beard_04
+    4300112: Adam_beard_05
+    4300114: Adam_beard_06
+    4300116: Adam_beard_07
+    4300118: Adam_beard_08
+    4300120: Adam_beard_09
+    4300122: Adam_beard_010
+    4300124: Adam_beard_011
+    4300126: Adam_beard_012
+    4300128: Adam_beard_013
+    4300130: Adam_beard_014
+    4300132: Adam_beard_015
+    4300134: Adam_beard_016
+    4300136: Adam_beard_017
+    4300138: Adam_beard_018
+    4300140: Adam_beard_019
+    4300142: Adam_beard_020
+    4300144: Adam_beard_021
+    4300146: Adam_beard_022
     9500000: //RootNode
   externalObjects:
   - first:
@@ -280,7 +392,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert2
-    second: {fileID: 2100000, guid: ef632b50563a1654ab71d76f75fa6850, type: 2}
+    second: {fileID: 2100000, guid: ebd6e755ec1732941825686c4d676ad6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: e2751d8bdda1f06428929df7e74c5e56, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

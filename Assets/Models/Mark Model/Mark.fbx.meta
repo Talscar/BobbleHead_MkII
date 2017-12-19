@@ -76,6 +76,25 @@ ModelImporter:
     100136: polySurface7
     100138: polySurface8
     100140: polySurface9
+    100142: Mark_beard
+    100144: Mark_beard_01
+    100146: Mark_beard_010
+    100148: Mark_beard_011
+    100150: Mark_beard_012
+    100152: Mark_beard_013
+    100154: Mark_beard_014
+    100156: Mark_beard_015
+    100158: Mark_beard_016
+    100160: Mark_beard_017
+    100162: Mark_beard_02
+    100164: Mark_beard_03
+    100166: Mark_beard_04
+    100168: Mark_beard_05
+    100170: Mark_beard_06
+    100172: Mark_beard_07
+    100174: Mark_beard_08
+    100176: Mark_beard_09
+    100178: transform1
     400000: Beard
     400002: //RootNode
     400004: Mark_Body
@@ -147,6 +166,25 @@ ModelImporter:
     400136: polySurface7
     400138: polySurface8
     400140: polySurface9
+    400142: Mark_beard
+    400144: Mark_beard_01
+    400146: Mark_beard_010
+    400148: Mark_beard_011
+    400150: Mark_beard_012
+    400152: Mark_beard_013
+    400154: Mark_beard_014
+    400156: Mark_beard_015
+    400158: Mark_beard_016
+    400160: Mark_beard_017
+    400162: Mark_beard_02
+    400164: Mark_beard_03
+    400166: Mark_beard_04
+    400168: Mark_beard_05
+    400170: Mark_beard_06
+    400172: Mark_beard_07
+    400174: Mark_beard_08
+    400176: Mark_beard_09
+    400178: transform1
     2300000: Mark_Body
     2300002: Mark_Glasses_Lenses
     2300004: Mark_Hair
@@ -216,6 +254,23 @@ ModelImporter:
     2300132: polySurface7
     2300134: polySurface8
     2300136: polySurface9
+    2300138: Mark_beard_01
+    2300140: Mark_beard_010
+    2300142: Mark_beard_011
+    2300144: Mark_beard_012
+    2300146: Mark_beard_013
+    2300148: Mark_beard_014
+    2300150: Mark_beard_015
+    2300152: Mark_beard_016
+    2300154: Mark_beard_017
+    2300156: Mark_beard_02
+    2300158: Mark_beard_03
+    2300160: Mark_beard_04
+    2300162: Mark_beard_05
+    2300164: Mark_beard_06
+    2300166: Mark_beard_07
+    2300168: Mark_beard_08
+    2300170: Mark_beard_09
     3300000: Mark_Body
     3300002: Mark_Glasses_Lenses
     3300004: Mark_Hair
@@ -285,6 +340,23 @@ ModelImporter:
     3300132: polySurface7
     3300134: polySurface8
     3300136: polySurface9
+    3300138: Mark_beard_01
+    3300140: Mark_beard_010
+    3300142: Mark_beard_011
+    3300144: Mark_beard_012
+    3300146: Mark_beard_013
+    3300148: Mark_beard_014
+    3300150: Mark_beard_015
+    3300152: Mark_beard_016
+    3300154: Mark_beard_017
+    3300156: Mark_beard_02
+    3300158: Mark_beard_03
+    3300160: Mark_beard_04
+    3300162: Mark_beard_05
+    3300164: Mark_beard_06
+    3300166: Mark_beard_07
+    3300168: Mark_beard_08
+    3300170: Mark_beard_09
     4300000: Mark_Body
     4300002: Mark_Hair
     4300004: polySurface6
@@ -354,6 +426,23 @@ ModelImporter:
     4300132: polySurface4
     4300134: polySurface5
     4300136: Mark_Glasses_Lenses
+    4300138: Mark_beard_01
+    4300140: Mark_beard_02
+    4300142: Mark_beard_03
+    4300144: Mark_beard_04
+    4300146: Mark_beard_05
+    4300148: Mark_beard_06
+    4300150: Mark_beard_07
+    4300152: Mark_beard_08
+    4300154: Mark_beard_09
+    4300156: Mark_beard_010
+    4300158: Mark_beard_011
+    4300160: Mark_beard_012
+    4300162: Mark_beard_013
+    4300164: Mark_beard_014
+    4300166: Mark_beard_015
+    4300168: Mark_beard_016
+    4300170: Mark_beard_017
     9500000: //RootNode
   externalObjects:
   - first:
