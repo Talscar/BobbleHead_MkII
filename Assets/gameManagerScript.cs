@@ -52,7 +52,7 @@ public class gameManagerScript : MonoBehaviour {
         running = true;
     }
 
-    bool running = false;
+    [SerializeField]public static bool running = false;
     /// <summary>
     /// When the game ends, it processes a timer and calculates the end game time to dissable the players ability to interact with the world objects.
     /// </summary>

@@ -12,7 +12,7 @@ public class progressionReportSystem : MonoBehaviour {
     /// Common people are Adam at 60%, Mark 10%, Matt 15%, Chris 15% etc.
     [Tooltip("It has to instantiate at THIS Specific location. So be happy with where it resides!")]
     public GameObject[] MultipleHeadsToShave;
-    GameObject insantiatedRefrence;
+    //GameObject insantiatedRefrence;
 
     void Awake()
     {
@@ -21,22 +21,43 @@ public class progressionReportSystem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //PRS_ = this;
-		
+		        Debug.Log("Incomplete Script functionality!");
+        ///Requires:
+        /// liveGameSetup script link from parent!
+        /// function call to change transform position!
+        /// OnKill the gameObject created is destroyed!!!
+        /// Requires way to spawn in Bobble heads!
 	}
-	
+
+    //bool OnDestroy_DontEmitParticles = false;
+    [SerializeField]
+    private GameObject instantiatedReference;
     public void OnKill()
     {
-
+        if (instantiatedReference != null)
+        {
+            //OnDestroy_DontEmitParticles = true;
+            instantiatedReference.GetComponentInChildren<BobbleHeadStatistics>().processParticlesDestructionProtocall();
+            Destroy(instantiatedReference);
+        }
+        instantiatedReference = null;
+        return;
     }
 
-    void OnRespawn()
+    public Transform OnRespawn()
     {
-        int rng = Random.Range(0, MultipleHeadsToShave.Length);
-        insantiatedRefrence = Instantiate(MultipleHeadsToShave[rng], transform);
+        if (instantiatedReference == null)
+        {
+            int rng = Random.Range(0, MultipleHeadsToShave.Length);
+            instantiatedReference = Instantiate(MultipleHeadsToShave[rng], transform);
+            return this.transform;
+        }
+        else return null;
     }
 
 	// Update is called once per frame
 	void Update () {
+
 		
 	}
 }

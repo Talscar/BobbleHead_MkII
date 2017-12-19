@@ -13,65 +13,24 @@ public class liveGameSetup : MonoBehaviour {
     }
     public levelProgression[] movePoints;
     int movePoints_Location = 0;
-
+    PlayerScreenPointToClick player;
     [SerializeField] private progressionReportSystem[] toBeShavedFaceRig = null; 
 	// Use this for initialization
 	void Start ()
     {
+
         Transform[] children = GetComponentsInChildren<Transform>();
         mainCamera = Camera.main.gameObject.transform;
+        player = mainCamera.GetComponent<PlayerScreenPointToClick>();
 
         transformFilter();
-        //Transform[] stopPoints;
-        //int i = 0;
-        //int scripts = 0;
-        //foreach (Transform child in children)
-        //{
-        //    if(child.name.Contains("[stop]"))
-        //    {
-        //        i++;
-        //        progressionReportSystem test = child.GetComponentInChildren<progressionReportSystem>();
-        //        if (test != null)
-        //        {
-        //            scripts++;
-        //        }
-        //    }
-        //}
-        //int countTransforms = GetComponentInChildren<Transform>().childCount;
-        //Debug.Log(countTransforms);
-        //stopPoints = new Transform[i];
-        //toBeShavedFaceRig = new progressionReportSystem[scripts];
-        //movePoints = new levelProgression[countTransforms];
-        //i = 0;
-        //scripts = 0;
-        //foreach (Transform child in children)
-        //{
-        //    if (child != transform)
-        //    {
-        //        movePoints[i].moveTo = child;
-        //        if (child.name.Contains("[stop]"))
-        //        {
-        //            stopPoints[i] = child;
-        //            //i++;
-        //            progressionReportSystem test = child.GetComponentInChildren<progressionReportSystem>();
-        //            if (test != null)
-        //            {
-        //                toBeShavedFaceRig[scripts] = test;
-        //                movePoints[i].toProcess = test;
-        //                scripts++;
-        //            }
-        //        }
-        //        i++;
-        //    }
-        //}
+        a = returnNewScriptSpawner(0);
 
         mainTransform(movePoints[movePoints_Location].moveTo, false);
-        //foreach
-
-
     }
+
+
     public int highestNumericValue = 0;
-    //int spare = 0;
     /// <summary>
     /// When called, it will verify the transforms that are children of this transform, and then process them for naming conventions. Return then repeat.
     /// </summary>
@@ -212,6 +171,7 @@ public class liveGameSetup : MonoBehaviour {
             ////////////    children[highestNumericValue] = child;
             ////////////}
         }
+        return;
         }
 
     int returnNewTransform(Transform[] transforms, int findMe)
@@ -337,15 +297,63 @@ public class liveGameSetup : MonoBehaviour {
 
     /// <summary>
     /// When my current FaceBobble_Relocator target is shaved or skipped... Function activates to inform this script its time to move to the next target!
+    /// Process 2.Start
     /// </summary>
-    public void nextTarget()
+    //public void nextTarget()
+    //{
+    //    Debug.Log("Next target!");
+    //    player.canFire(false);
+    //    nextPosition = true;
+
+    //    //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
+    //            b = returnNewScriptSpawner(1);
+
+    //    return;
+    //}
+
+    /// <summary>
+    /// Returns the Transform in the order of selection to do stuff with.
+    /// </summary>
+    /// <returns></returns>
+    Transform returnNewScriptSpawner(int newCurrentTransform)
     {
-        nextPosition = true;
-        preClick = true;
-    }
-        /// <summary>
+
+        //currentTransform
+        int i = 0;
+        newCurrentTransform += currentTransform;
+        ///a = newCurrentTransform - I
         /// 
-        /// </summary>
+        // -37 + i = 0;
+        //
+
+
+        while(i < movePoints.Length)
+        {
+            if(newCurrentTransform + i > movePoints.Length - 1)
+            {
+                newCurrentTransform = 0 - i;
+                //newCurrentTransform = newCurrentTransform;
+            }
+            Debug.Log("Transform compaired Current:Length = " + (newCurrentTransform + i) + " : " + movePoints.Length);
+            if (movePoints[newCurrentTransform + i].toProcess != null)
+            {
+                b_Position = newCurrentTransform + i;
+                return movePoints[newCurrentTransform + i].toProcess.OnRespawn();
+            }
+            //newCurrentTransform++;
+            i++;
+        }
+        return null;
+    }
+
+    public Transform a;
+    public Transform b;
+    public int b_Position;
+
+    //bool go = false;
+    /// <summary>
+    /// 
+    /// </summary>
     void transformCamera()
     {
         //if (movePoints.Length < currentTransform)
@@ -357,18 +365,33 @@ public class liveGameSetup : MonoBehaviour {
         {
             if (preClick)
             {
-                MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
+
                 preClick = false;
+                player.canFire(false);
+                if(rotateCamera || positionCamera)
+                if (b == null)
+                {
+                    nextPosition = true;
+
+                    //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
+                    Debug.LogWarning("BUG Stagers due to following line of code.");
+                    b = returnNewScriptSpawner(1);
+
+                    //BUG: If the number is 1 it will glitch. If 0 it will only return to the original A Coordinates.
+                }
+                MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
+                //nextTarget();
+
             }
-            if (positionCamera) //Time speed delay variables
+            else if (positionCamera) //Time speed delay variables
             {
 
                 mainCamera.position = Vector3.Lerp(mainCamera.position, movePoints[currentTransform].moveTo.position, travelSpeedOverTime);
                 float distance = Vector3.Distance(mainCamera.position, movePoints[currentTransform].moveTo.position);
                 if (distance < distanceSensitivity)
                 {
-                    positionCamera = false;
                     rotateCamera = true;
+                    positionCamera = false;
                     MoveAtTime = Time.time + timeSpeedDelayVariblesBetweenTransitions;
                 }
             }
@@ -384,17 +407,27 @@ public class liveGameSetup : MonoBehaviour {
                 }
             }
         }
-        else if(!positionCamera && !rotateCamera && nextPosition)
+        else if (!positionCamera && !rotateCamera && nextPosition) //Don,t move, don't rotate, go to next position!
         {
             //if(movePoints[currentTransform].toProcess != null)
             //Test for stop on thing!
             Debug.Log("Requires Filter and logic loops.");
-            if(movePoints[currentTransform].toProcess != null)
-            {
-                nextPosition = false;
-                //movePoints[currentTransform + 1]
-                //stop moving, reactivate the sissors and get chopping!
-            }
+            if (currentTransform == b_Position)
+                if (movePoints[currentTransform].toProcess != null)
+                {
+
+                    nextPosition = false;
+                    if (a && b != null)
+                    {
+                        Debug.LogError("Break point! - Kill's the A Position NPC...");
+                        a.gameObject.GetComponent<progressionReportSystem>().OnKill();
+                        a = b;
+                        b = null;
+                        player.canFire(true);
+                        preClick = true; //Solve the glitching? YES
+                    }
+                    //stop moving, reactivate the sissors and get chopping!
+                }
 
 
             positionCamera = true;
@@ -412,15 +445,28 @@ public class liveGameSetup : MonoBehaviour {
             else
                 currentTransform = 0;
 
-
+            //preClick = true; //Makes spawners work? YES
             //else
             //{
             //    currentTransform = 0;
             //}
             //if()
         }
+    }
 
+    public void skipHead()
+    {
+        if (!nextPosition)
+        {
+            mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(true);
+            nextPosition = true;
+        }
+    }
 
+    public void headCompleted()
+    {
+        mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(false);
+        nextPosition = true;
     }
 
     [Header("Camera transform tuning tools")]
@@ -429,13 +475,20 @@ public class liveGameSetup : MonoBehaviour {
     public float timeSpeedDelayVariblesBetweenTransitions = 1.6f;
     [SerializeField] private float MoveAtTime = 0;
     [Header("To be Private variables")]
-    public bool nextPosition = false;
+    public bool nextPosition = true;
     public bool positionCamera = false;
     public bool rotateCamera = false;
     public int currentTransform = 0;
     // Update is called once per frame
 
-    bool preClick = true;
+    public bool preClick = true;
+
+    public void HairSet_Complete()
+    {
+        player.myScore.facesDone++;
+        nextPosition = true;
+        return;
+    }
 
 
 	void Update ()

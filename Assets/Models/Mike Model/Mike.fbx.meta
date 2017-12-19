@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: 1c81b68ef93e48b448667bff92c10491
+timeCreated: 1513681578
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Make_glasses_frame
+    100002: //RootNode
+    100004: Mike_beard_01
+    100006: Mike_beard_010
+    100008: Mike_beard_011
+    100010: Mike_beard_012
+    100012: Mike_beard_013
+    100014: Mike_beard_014
+    100016: Mike_beard_015
+    100018: Mike_beard_016
+    100020: Mike_beard_017
+    100022: Mike_beard_02
+    100024: Mike_beard_03
+    100026: Mike_beard_04
+    100028: Mike_beard_05
+    100030: Mike_beard_06
+    100032: Mike_beard_07
+    100034: Mike_beard_08
+    100036: Mike_beard_09
+    100038: Mike_beard_low
+    100040: Mike_body
+    100042: Mike_glasses_GRP
+    100044: Mike_hair_02
+    100046: Mike_hair_low
+    100048: Mike_head
+    100050: Mike_lens_01
+    100052: Mike_lens_02
+    100054: transform14
+    400000: Make_glasses_frame
+    400002: //RootNode
+    400004: Mike_beard_01
+    400006: Mike_beard_010
+    400008: Mike_beard_011
+    400010: Mike_beard_012
+    400012: Mike_beard_013
+    400014: Mike_beard_014
+    400016: Mike_beard_015
+    400018: Mike_beard_016
+    400020: Mike_beard_017
+    400022: Mike_beard_02
+    400024: Mike_beard_03
+    400026: Mike_beard_04
+    400028: Mike_beard_05
+    400030: Mike_beard_06
+    400032: Mike_beard_07
+    400034: Mike_beard_08
+    400036: Mike_beard_09
+    400038: Mike_beard_low
+    400040: Mike_body
+    400042: Mike_glasses_GRP
+    400044: Mike_hair_02
+    400046: Mike_hair_low
+    400048: Mike_head
+    400050: Mike_lens_01
+    400052: Mike_lens_02
+    400054: transform14
+    2300000: Make_glasses_frame
+    2300002: Mike_beard_01
+    2300004: Mike_beard_010
+    2300006: Mike_beard_011
+    2300008: Mike_beard_012
+    2300010: Mike_beard_013
+    2300012: Mike_beard_014
+    2300014: Mike_beard_015
+    2300016: Mike_beard_016
+    2300018: Mike_beard_017
+    2300020: Mike_beard_02
+    2300022: Mike_beard_03
+    2300024: Mike_beard_04
+    2300026: Mike_beard_05
+    2300028: Mike_beard_06
+    2300030: Mike_beard_07
+    2300032: Mike_beard_08
+    2300034: Mike_beard_09
+    2300036: Mike_body
+    2300038: Mike_hair_02
+    2300040: Mike_hair_low
+    2300042: Mike_head
+    2300044: Mike_lens_01
+    2300046: Mike_lens_02
+    3300000: Make_glasses_frame
+    3300002: Mike_beard_01
+    3300004: Mike_beard_010
+    3300006: Mike_beard_011
+    3300008: Mike_beard_012
+    3300010: Mike_beard_013
+    3300012: Mike_beard_014
+    3300014: Mike_beard_015
+    3300016: Mike_beard_016
+    3300018: Mike_beard_017
+    3300020: Mike_beard_02
+    3300022: Mike_beard_03
+    3300024: Mike_beard_04
+    3300026: Mike_beard_05
+    3300028: Mike_beard_06
+    3300030: Mike_beard_07
+    3300032: Mike_beard_08
+    3300034: Mike_beard_09
+    3300036: Mike_body
+    3300038: Mike_hair_02
+    3300040: Mike_hair_low
+    3300042: Mike_head
+    3300044: Mike_lens_01
+    3300046: Mike_lens_02
+    4300000: Mike_body
+    4300002: Mike_head
+    4300004: Mike_hair_low
+    4300006: Mike_hair_02
+    4300008: Mike_beard_01
+    4300010: Mike_beard_02
+    4300012: Mike_beard_03
+    4300014: Mike_beard_04
+    4300016: Mike_beard_05
+    4300018: Mike_beard_06
+    4300020: Mike_beard_07
+    4300022: Mike_beard_08
+    4300024: Mike_beard_09
+    4300026: Mike_beard_010
+    4300028: Mike_beard_011
+    4300030: Mike_beard_012
+    4300032: Mike_beard_013
+    4300034: Mike_beard_014
+    4300036: Mike_beard_015
+    4300038: Mike_beard_016
+    4300040: Mike_beard_017
+    4300042: Make_glasses_frame
+    4300044: Mike_lens_01
+    4300046: Mike_lens_02
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: cf0f33042b35dbb4cbdb65e1af666ac6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 5f03f033fbb85d64e839928d1c60bffb, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

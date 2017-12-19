@@ -1399,6 +1399,8 @@ MonoBehaviour:
     Unsuccessful_hairsCut: 0
     facesDone: 0
     facesSkipped: 0
+  scoreKeeping_Text: {fileID: 0}
+  Locators: {fileID: 0}
   cam: {fileID: 0}
   MobileTuning: 0.1
   DesktopTuning: 0.05

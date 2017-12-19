@@ -61,10 +61,47 @@ public class BobbleHeadStatistics : MonoBehaviour {
 
         }
     }
-/*
- * Keep values for failure to shave
- * Keep value of points for success to shave
- * Keep count of hair count
- * 
- */
+
+    public void processParticlesDestructionProtocall()
+    {
+        Transform[] children = transform.GetComponentsInChildren<Transform>();
+        foreach(Transform child in children)
+        {
+            if(child.GetComponent("hairScore") != null)
+            {
+                child.GetComponent<hairScore>().dontSpawnParticlesOnDeath();
+            }
+        }
+        return;
+    }
+    /*
+     * Keep values for failure to shave
+     * Keep value of points for success to shave
+     * Keep count of hair count
+     * 
+     */
+    public void reset()
+    {
+
+    }
+
+
+    int hairSets = 0;
+    public void HairSet_Update()
+    {
+        hairSets--;
+        Debug.LogWarning("Incomplete Functionality!");
+        if(hairSets <= 0)
+        {
+            FindObjectOfType<liveGameSetup>().HairSet_Complete();
+        }
+
+        //Do a check if 0 and update transform stuff so it goes to the next bobble head!
+    }
+
+    public void HairSet_Start()
+    {
+        hairSets++;
+        return;
+    }
 }
