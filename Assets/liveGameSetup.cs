@@ -456,9 +456,13 @@ public class liveGameSetup : MonoBehaviour {
 
     public void skipHead()
     {
-        mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(true);
-        nextPosition = true;
+        if (!nextPosition)
+        {
+            mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(true);
+            nextPosition = true;
+        }
     }
+
     public void headCompleted()
     {
         mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(false);
