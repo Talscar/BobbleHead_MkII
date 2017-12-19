@@ -21,9 +21,11 @@ GameObject:
   - component: {fileID: 4973013416119224}
   - component: {fileID: 33227265115116628}
   - component: {fileID: 23436260405897052}
+  - component: {fileID: 64056144209429846}
+  - component: {fileID: 114091325905990236}
   m_Layer: 0
   m_Name: Chris_beard_018
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,9 +40,11 @@ GameObject:
   - component: {fileID: 4620395988229832}
   - component: {fileID: 33775521537232456}
   - component: {fileID: 23465093573043150}
+  - component: {fileID: 64246125828736686}
+  - component: {fileID: 114809432175689290}
   m_Layer: 0
   m_Name: Chris_beard_07
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,9 +59,11 @@ GameObject:
   - component: {fileID: 4013799379221132}
   - component: {fileID: 33613085450389838}
   - component: {fileID: 23574256943799224}
+  - component: {fileID: 64543809039443590}
+  - component: {fileID: 114609728035904634}
   m_Layer: 0
   m_Name: Chris_beard_08
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,9 +78,11 @@ GameObject:
   - component: {fileID: 4891442530095806}
   - component: {fileID: 33724280810419116}
   - component: {fileID: 23723209303684100}
+  - component: {fileID: 64708242126941326}
+  - component: {fileID: 114971956641001998}
   m_Layer: 0
   m_Name: Chris_beard_013
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,9 +97,11 @@ GameObject:
   - component: {fileID: 4893621647675162}
   - component: {fileID: 33263666626889284}
   - component: {fileID: 23503676798365444}
+  - component: {fileID: 64144556799107814}
+  - component: {fileID: 114331232787518178}
   m_Layer: 0
   m_Name: Chris_beard_014
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,6 +114,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4781774513337680}
+  - component: {fileID: 114157813477120090}
   m_Layer: 0
   m_Name: Chris_beard
   m_TagString: Untagged
@@ -121,9 +132,11 @@ GameObject:
   - component: {fileID: 4776525466668436}
   - component: {fileID: 33394600542989132}
   - component: {fileID: 23371797467903856}
+  - component: {fileID: 64159669402371622}
+  - component: {fileID: 114162136829686718}
   m_Layer: 0
   m_Name: Chris_beard_016
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,9 +151,11 @@ GameObject:
   - component: {fileID: 4498384702342956}
   - component: {fileID: 33970337619760310}
   - component: {fileID: 23596950876553484}
+  - component: {fileID: 64957832786811512}
+  - component: {fileID: 114620650814173976}
   m_Layer: 0
   m_Name: Chris_beard_05
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,9 +186,11 @@ GameObject:
   - component: {fileID: 4055857839059122}
   - component: {fileID: 33563714938343382}
   - component: {fileID: 23135211120499686}
+  - component: {fileID: 64907966815902938}
+  - component: {fileID: 114314048643948124}
   m_Layer: 0
   m_Name: Chris_beard_01
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,9 +205,11 @@ GameObject:
   - component: {fileID: 4712188557479980}
   - component: {fileID: 33130315453359338}
   - component: {fileID: 23325772910191934}
+  - component: {fileID: 64848110536956860}
+  - component: {fileID: 114043865339573694}
   m_Layer: 0
   m_Name: Chris_beard_02
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,9 +241,11 @@ GameObject:
   - component: {fileID: 4626993332138690}
   - component: {fileID: 33988080791118104}
   - component: {fileID: 23677589660933384}
+  - component: {fileID: 64523712909270936}
+  - component: {fileID: 114987863005505356}
   m_Layer: 0
   m_Name: Chris_beard_015
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,9 +260,11 @@ GameObject:
   - component: {fileID: 4959970103992154}
   - component: {fileID: 33787864298100812}
   - component: {fileID: 23847123462363562}
+  - component: {fileID: 64131529729402066}
+  - component: {fileID: 114161503557656468}
   m_Layer: 0
   m_Name: Chris_beard_019
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -256,9 +279,11 @@ GameObject:
   - component: {fileID: 4538841153640902}
   - component: {fileID: 33578283415568662}
   - component: {fileID: 23513091073393260}
+  - component: {fileID: 64502764734539150}
+  - component: {fileID: 114300568023990204}
   m_Layer: 0
   m_Name: Chris_beard_012
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -273,9 +298,11 @@ GameObject:
   - component: {fileID: 4570742263567118}
   - component: {fileID: 33402701209701824}
   - component: {fileID: 23101748101739818}
+  - component: {fileID: 64550530028703574}
+  - component: {fileID: 114205875690241646}
   m_Layer: 0
   m_Name: Chris_beard_010
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -290,6 +317,7 @@ GameObject:
   - component: {fileID: 4671855258669636}
   - component: {fileID: 33399898797770998}
   - component: {fileID: 23029902899093056}
+  - component: {fileID: 114308484861897060}
   m_Layer: 0
   m_Name: Chris_head
   m_TagString: Untagged
@@ -324,9 +352,11 @@ GameObject:
   - component: {fileID: 4176773095015018}
   - component: {fileID: 33278522830356038}
   - component: {fileID: 23473068417918864}
+  - component: {fileID: 64491641726249574}
+  - component: {fileID: 114927382865910974}
   m_Layer: 0
   m_Name: Chris_beard_09
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -341,9 +371,11 @@ GameObject:
   - component: {fileID: 4717911997279392}
   - component: {fileID: 33361125790391932}
   - component: {fileID: 23442597802145068}
+  - component: {fileID: 64691365930138328}
+  - component: {fileID: 114036323269327720}
   m_Layer: 0
   m_Name: Chris_beard_04
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -358,9 +390,11 @@ GameObject:
   - component: {fileID: 4474044302782066}
   - component: {fileID: 33964612021271240}
   - component: {fileID: 23488332369175784}
+  - component: {fileID: 64068056625508526}
+  - component: {fileID: 114738200185945628}
   m_Layer: 0
   m_Name: Chris_beard_03
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,9 +409,11 @@ GameObject:
   - component: {fileID: 4714825604018052}
   - component: {fileID: 33220783611640158}
   - component: {fileID: 23823431276919246}
+  - component: {fileID: 64499119983349228}
+  - component: {fileID: 114537177967209730}
   m_Layer: 0
   m_Name: Chris_beard_011
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -392,9 +428,11 @@ GameObject:
   - component: {fileID: 4358495720223524}
   - component: {fileID: 33780619289091438}
   - component: {fileID: 23370915392856230}
+  - component: {fileID: 64886631792391860}
+  - component: {fileID: 114984254869010756}
   m_Layer: 0
   m_Name: Chris_beard_06
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1557,6 +1595,258 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1442042568206480}
   m_Mesh: {fileID: 4300132, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64056144209429846
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022394227379900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300136, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64068056625508526
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1838828378807474}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300108, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64131529729402066
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1445633937576584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300138, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64144556799107814
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227071250653392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300130, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64159669402371622
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334230660597020}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300134, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64246125828736686
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1068395344851040}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300116, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64491641726249574
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1624203129759578}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300120, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64499119983349228
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940193980589074}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300124, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64502764734539150
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455608020045426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300126, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64523712909270936
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1442042568206480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300132, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64543809039443590
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075487252544692}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300118, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64550530028703574
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1477465570859512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300122, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64691365930138328
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1676442783303876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300110, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64708242126941326
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1111627167415822}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300128, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64848110536956860
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1420690776149878}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300106, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64886631792391860
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1998721618685594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300114, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64907966815902938
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381216239006732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300104, guid: a9c175252843c274d802be88e8618b16, type: 3}
+--- !u!64 &64957832786811512
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349816884793288}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300112, guid: a9c175252843c274d802be88e8618b16, type: 3}
 --- !u!95 &95606149269703766
 Animator:
   serializedVersion: 3
@@ -1574,3 +1864,317 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114036323269327720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1676442783303876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114043865339573694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1420690776149878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114091325905990236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022394227379900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114157813477120090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1270727427728728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2770cdf28e6bf404eae26ad3535f46f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childrenToShave: 0
+  shavingZeroByPercent: 0
+--- !u!114 &114161503557656468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1445633937576584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114162136829686718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334230660597020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114205875690241646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1477465570859512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114300568023990204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455608020045426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114308484861897060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535878738084650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 693d4d14e35f7c644a0c1b8e6bb693d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleDeathSmokeBurst: {fileID: 0}
+  offset_Self_Destruction: 1.5
+--- !u!114 &114314048643948124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381216239006732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114331232787518178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227071250653392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114537177967209730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940193980589074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114609728035904634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075487252544692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114620650814173976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349816884793288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114738200185945628
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1838828378807474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114809432175689290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1068395344851040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114927382865910974
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1624203129759578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114971956641001998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1111627167415822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114984254869010756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1998721618685594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114987863005505356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1442042568206480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0

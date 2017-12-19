@@ -21,9 +21,11 @@ GameObject:
   - component: {fileID: 4471087462075418}
   - component: {fileID: 33790595215013982}
   - component: {fileID: 23299231686294774}
+  - component: {fileID: 64175095777930526}
+  - component: {fileID: 114066094035473156}
   m_Layer: 0
   m_Name: Matt_beard_06
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,9 +40,11 @@ GameObject:
   - component: {fileID: 4247855445410612}
   - component: {fileID: 33457439709404654}
   - component: {fileID: 23418059806907734}
+  - component: {fileID: 64216409293906242}
+  - component: {fileID: 114151899590455416}
   m_Layer: 0
   m_Name: Matt_beard_04
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,9 +59,11 @@ GameObject:
   - component: {fileID: 4292271878471874}
   - component: {fileID: 33387411925736480}
   - component: {fileID: 23253415504879340}
+  - component: {fileID: 64431721440563842}
+  - component: {fileID: 114795508580990236}
   m_Layer: 0
   m_Name: Matt_beard_012
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,9 +78,11 @@ GameObject:
   - component: {fileID: 4329302311742862}
   - component: {fileID: 33558581206847338}
   - component: {fileID: 23387616788563490}
+  - component: {fileID: 64296334717641170}
+  - component: {fileID: 114711763106601992}
   m_Layer: 0
   m_Name: Matt_beard_07
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,9 +97,11 @@ GameObject:
   - component: {fileID: 4809889778453126}
   - component: {fileID: 33169106892755236}
   - component: {fileID: 23215622763354402}
+  - component: {fileID: 64998382333160684}
+  - component: {fileID: 114905151896347102}
   m_Layer: 0
   m_Name: Matt_beard_03
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,6 +116,7 @@ GameObject:
   - component: {fileID: 4337727738619968}
   - component: {fileID: 33030215876418394}
   - component: {fileID: 23485920435013142}
+  - component: {fileID: 114982619830761832}
   m_Layer: 0
   m_Name: Matt_Head
   m_TagString: Untagged
@@ -123,9 +134,11 @@ GameObject:
   - component: {fileID: 4115368896265298}
   - component: {fileID: 33198670348275908}
   - component: {fileID: 23478811094193196}
+  - component: {fileID: 64918499707279804}
+  - component: {fileID: 114079163891081080}
   m_Layer: 0
   m_Name: Matt_beard_016
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,9 +153,11 @@ GameObject:
   - component: {fileID: 4780370193287780}
   - component: {fileID: 33502398581715346}
   - component: {fileID: 23931877578478090}
+  - component: {fileID: 64386598595752144}
+  - component: {fileID: 114347360719151784}
   m_Layer: 0
   m_Name: Matt_beard_014
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -174,9 +189,11 @@ GameObject:
   - component: {fileID: 4679204052937270}
   - component: {fileID: 33631335329209662}
   - component: {fileID: 23879038265238200}
+  - component: {fileID: 64237856173964110}
+  - component: {fileID: 114539506315454102}
   m_Layer: 0
   m_Name: Matt_beard_01
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,9 +208,11 @@ GameObject:
   - component: {fileID: 4331758252755886}
   - component: {fileID: 33779204088457314}
   - component: {fileID: 23178132476329378}
+  - component: {fileID: 64448391237640614}
+  - component: {fileID: 114732490028883668}
   m_Layer: 0
   m_Name: Matt_beard_011
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,9 +227,11 @@ GameObject:
   - component: {fileID: 4289927987008340}
   - component: {fileID: 33424749512322480}
   - component: {fileID: 23204037087363328}
+  - component: {fileID: 64191104772988758}
+  - component: {fileID: 114847173138218616}
   m_Layer: 0
   m_Name: Matt_beard_013
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,9 +246,11 @@ GameObject:
   - component: {fileID: 4832210319801984}
   - component: {fileID: 33505688113007172}
   - component: {fileID: 23695357241151824}
+  - component: {fileID: 64091900857101952}
+  - component: {fileID: 114502922024648936}
   m_Layer: 0
   m_Name: Matt_beard_08
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,9 +282,11 @@ GameObject:
   - component: {fileID: 4244229369540048}
   - component: {fileID: 33069257577634102}
   - component: {fileID: 23059368201807620}
+  - component: {fileID: 64377782201550124}
+  - component: {fileID: 114659437889539784}
   m_Layer: 0
   m_Name: Matt_beard_010
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,9 +301,11 @@ GameObject:
   - component: {fileID: 4033801038424206}
   - component: {fileID: 33746843271458056}
   - component: {fileID: 23446660652699288}
+  - component: {fileID: 64958071617053724}
+  - component: {fileID: 114761864039138112}
   m_Layer: 0
   m_Name: Matt_beard_015
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -293,9 +320,11 @@ GameObject:
   - component: {fileID: 4769773754531846}
   - component: {fileID: 33931257660449066}
   - component: {fileID: 23697272183638220}
+  - component: {fileID: 64860971420584136}
+  - component: {fileID: 114569950994225054}
   m_Layer: 0
   m_Name: Matt_beard_02
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,6 +337,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4219738519712726}
+  - component: {fileID: 114324334008852730}
   m_Layer: 0
   m_Name: Matt_beard
   m_TagString: Untagged
@@ -325,9 +355,11 @@ GameObject:
   - component: {fileID: 4047732779165464}
   - component: {fileID: 33555702839120136}
   - component: {fileID: 23684511216090386}
+  - component: {fileID: 64542028748368990}
+  - component: {fileID: 114344733894906960}
   m_Layer: 0
   m_Name: Matt_beard_09
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -342,9 +374,11 @@ GameObject:
   - component: {fileID: 4746172149093620}
   - component: {fileID: 33318205862981484}
   - component: {fileID: 23395071280651942}
+  - component: {fileID: 64147125556210946}
+  - component: {fileID: 114367492602658184}
   m_Layer: 0
   m_Name: Matt_beard_05
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,9 +409,11 @@ GameObject:
   - component: {fileID: 4050815659934072}
   - component: {fileID: 33524993308497466}
   - component: {fileID: 23835285755386162}
+  - component: {fileID: 64059855362926542}
+  - component: {fileID: 114179306855504434}
   m_Layer: 0
   m_Name: Matt_beard_017
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1486,6 +1522,244 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1804822870786166}
   m_Mesh: {fileID: 4300132, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64059855362926542
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1980558673056608}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300162, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64091900857101952
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653062670131574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300144, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64147125556210946
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932557201467050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300138, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64175095777930526
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018726703990156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300140, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64191104772988758
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563622094842010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300154, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64216409293906242
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038540651236022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300136, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64237856173964110
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1542610678264816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300130, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64296334717641170
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1268727399169458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300142, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64377782201550124
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1714652782808538}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300148, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64386598595752144
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506230886746808}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300156, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64431721440563842
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161600619810614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300152, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64448391237640614
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1544930830207428}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300150, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64542028748368990
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903657449408902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300146, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64860971420584136
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1804822870786166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300132, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64918499707279804
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1422235309411190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300160, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64958071617053724
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1799486961641926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300158, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
+--- !u!64 &64998382333160684
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1330702835228926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300134, guid: f659d9114fe42124f94a01e2ace226b8, type: 3}
 --- !u!95 &95776116120398026
 Animator:
   serializedVersion: 3
@@ -1503,3 +1777,301 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114066094035473156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018726703990156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114079163891081080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1422235309411190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114151899590455416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038540651236022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114179306855504434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1980558673056608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114324334008852730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1895220081168370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2770cdf28e6bf404eae26ad3535f46f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childrenToShave: 0
+  shavingZeroByPercent: 0
+--- !u!114 &114344733894906960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903657449408902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114347360719151784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506230886746808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114367492602658184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932557201467050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114502922024648936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653062670131574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114539506315454102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1542610678264816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114569950994225054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1804822870786166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114659437889539784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1714652782808538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114711763106601992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1268727399169458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114732490028883668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1544930830207428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114761864039138112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1799486961641926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114795508580990236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161600619810614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114847173138218616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563622094842010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114905151896347102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1330702835228926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114982619830761832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1331054274971352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 693d4d14e35f7c644a0c1b8e6bb693d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleDeathSmokeBurst: {fileID: 0}
+  offset_Self_Destruction: 1.5

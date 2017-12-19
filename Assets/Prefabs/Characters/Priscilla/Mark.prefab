@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33738250230169268}
   - component: {fileID: 23390852949153936}
   - component: {fileID: 114110113979735352}
+  - component: {fileID: 64480894234379038}
   m_Layer: 0
   m_Name: Mark_beard_09
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,9 +41,10 @@ GameObject:
   - component: {fileID: 33329508396682066}
   - component: {fileID: 23504674556449196}
   - component: {fileID: 114356184774307324}
+  - component: {fileID: 64030139306442806}
   m_Layer: 0
   m_Name: Mark_beard_08
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,9 +60,10 @@ GameObject:
   - component: {fileID: 33900287713186426}
   - component: {fileID: 23521498229729274}
   - component: {fileID: 114321455682375576}
+  - component: {fileID: 64764650923938800}
   m_Layer: 0
   m_Name: Mark_beard_016
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,9 +79,10 @@ GameObject:
   - component: {fileID: 33907879407164626}
   - component: {fileID: 23133431083793558}
   - component: {fileID: 114876188724300616}
+  - component: {fileID: 64859289782583136}
   m_Layer: 0
   m_Name: Mark_beard_04
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,9 +98,10 @@ GameObject:
   - component: {fileID: 33687000322147064}
   - component: {fileID: 23157242518823832}
   - component: {fileID: 114898194052848554}
+  - component: {fileID: 64075606191604498}
   m_Layer: 0
   m_Name: Mark_beard_06
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,9 +117,10 @@ GameObject:
   - component: {fileID: 33283718594994440}
   - component: {fileID: 23171201841660088}
   - component: {fileID: 114600473503164646}
+  - component: {fileID: 64350690545097858}
   m_Layer: 0
   m_Name: Mark_beard_015
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,9 +136,10 @@ GameObject:
   - component: {fileID: 33762143714018550}
   - component: {fileID: 23541455850043116}
   - component: {fileID: 114435098252156752}
+  - component: {fileID: 64795990493269524}
   m_Layer: 0
   m_Name: Mark_beard_03
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,9 +172,10 @@ GameObject:
   - component: {fileID: 33147666986310014}
   - component: {fileID: 23473936277121312}
   - component: {fileID: 114029459424606400}
+  - component: {fileID: 64292019385417530}
   m_Layer: 0
   m_Name: Mark_beard_011
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -201,9 +209,10 @@ GameObject:
   - component: {fileID: 33979670010842338}
   - component: {fileID: 23781616477021522}
   - component: {fileID: 114970018427451788}
+  - component: {fileID: 64742480232567664}
   m_Layer: 0
   m_Name: Mark_beard_02
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,9 +245,10 @@ GameObject:
   - component: {fileID: 33731271062546860}
   - component: {fileID: 23988971294575008}
   - component: {fileID: 114887276813412468}
+  - component: {fileID: 64648174419904488}
   m_Layer: 0
   m_Name: Mark_beard_010
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -254,9 +264,10 @@ GameObject:
   - component: {fileID: 33446996769097242}
   - component: {fileID: 23786321126184730}
   - component: {fileID: 114509768968627224}
+  - component: {fileID: 64816588601407094}
   m_Layer: 0
   m_Name: Mark_beard_014
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288,9 +299,10 @@ GameObject:
   - component: {fileID: 33055101695059000}
   - component: {fileID: 23707976727235250}
   - component: {fileID: 114585658505300044}
+  - component: {fileID: 64186902783342680}
   m_Layer: 0
   m_Name: Mark_beard_017
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -306,9 +318,10 @@ GameObject:
   - component: {fileID: 33343101814879514}
   - component: {fileID: 23427232618887864}
   - component: {fileID: 114405372082755764}
+  - component: {fileID: 64220590368961340}
   m_Layer: 0
   m_Name: Mark_beard_01
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -321,6 +334,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4478797076129164}
+  - component: {fileID: 114203336116464740}
   m_Layer: 0
   m_Name: Mark_beard
   m_TagString: Untagged
@@ -339,9 +353,10 @@ GameObject:
   - component: {fileID: 33309849339085456}
   - component: {fileID: 23332886275338372}
   - component: {fileID: 114374148771041148}
+  - component: {fileID: 64152503693812672}
   m_Layer: 0
   m_Name: Mark_beard_013
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -357,9 +372,10 @@ GameObject:
   - component: {fileID: 33434526673034312}
   - component: {fileID: 23267752898491146}
   - component: {fileID: 114177684147248172}
+  - component: {fileID: 64464931770333450}
   m_Layer: 0
   m_Name: Mark_beard_012
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,9 +391,10 @@ GameObject:
   - component: {fileID: 33025444678396836}
   - component: {fileID: 23313877752075216}
   - component: {fileID: 114830903431314468}
+  - component: {fileID: 64945829116617906}
   m_Layer: 0
   m_Name: Mark_beard_07
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -408,9 +425,10 @@ GameObject:
   - component: {fileID: 33796681289860830}
   - component: {fileID: 23359336725081012}
   - component: {fileID: 114119067546631704}
+  - component: {fileID: 64262264556875868}
   m_Layer: 0
   m_Name: Mark_beard_05
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1533,6 +1551,244 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1243821389241902}
   m_Mesh: {fileID: 4300140, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64030139306442806
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1030474697328680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300152, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64075606191604498
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1103091284248250}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300148, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64152503693812672
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629476546906904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300162, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64186902783342680
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1494887954820696}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300170, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64220590368961340
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1519253171388622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300138, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64262264556875868
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1863375748389418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300146, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64292019385417530
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178802720280544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300158, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64350690545097858
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1108629938672760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300166, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64464931770333450
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1638687470187504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300160, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64480894234379038
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1009039879070768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300154, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64648174419904488
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1382990123035184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300156, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64742480232567664
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1243821389241902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300140, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64764650923938800
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1054230017547850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300168, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64795990493269524
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1111047854462926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300142, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64816588601407094
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1386094772875000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300164, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64859289782583136
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1101686854344738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300144, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
+--- !u!64 &64945829116617906
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1678660324733554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300150, guid: 98495c848d18feb4b868bd2a348e879a, type: 3}
 --- !u!95 &95725157707090420
 Animator:
   serializedVersion: 3
@@ -1614,6 +1870,19 @@ MonoBehaviour:
   ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
     type: 2}
   ParticleEmmiter_LifeTime: 0
+--- !u!114 &114203336116464740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1565934447086510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2770cdf28e6bf404eae26ad3535f46f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childrenToShave: 0
+  shavingZeroByPercent: 0
 --- !u!114 &114321455682375576
 MonoBehaviour:
   m_ObjectHideFlags: 1

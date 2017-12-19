@@ -39,9 +39,10 @@ GameObject:
   - component: {fileID: 33543038171286084}
   - component: {fileID: 23063196842101290}
   - component: {fileID: 114964631316911616}
+  - component: {fileID: 64143515584082550}
   m_Layer: 0
   m_Name: Mike_beard_03
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,6 +55,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4355890696056238}
+  - component: {fileID: 114305707642289528}
+  - component: {fileID: 114037699058039792}
   m_Layer: 0
   m_Name: Mike_beard_low
   m_TagString: Untagged
@@ -89,9 +92,10 @@ GameObject:
   - component: {fileID: 33521282274323642}
   - component: {fileID: 23252286712214714}
   - component: {fileID: 114067807223332180}
+  - component: {fileID: 64616512880297378}
   m_Layer: 0
   m_Name: Mike_beard_04
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,9 +111,10 @@ GameObject:
   - component: {fileID: 33815003461938548}
   - component: {fileID: 23501038913863168}
   - component: {fileID: 114248163697535390}
+  - component: {fileID: 64739476375733770}
   m_Layer: 0
   m_Name: Mike_beard_05
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,9 +147,10 @@ GameObject:
   - component: {fileID: 33259594437320330}
   - component: {fileID: 23627646437457756}
   - component: {fileID: 114348236562259092}
+  - component: {fileID: 64010175759210582}
   m_Layer: 0
   m_Name: Mike_beard_06
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,9 +181,10 @@ GameObject:
   - component: {fileID: 33973793869794156}
   - component: {fileID: 23185413426955974}
   - component: {fileID: 114083791399035632}
+  - component: {fileID: 64397143330790594}
   m_Layer: 0
   m_Name: Mike_beard_015
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,9 +200,10 @@ GameObject:
   - component: {fileID: 33534866543989794}
   - component: {fileID: 23270386686174594}
   - component: {fileID: 114644959836543308}
+  - component: {fileID: 64925483218214398}
   m_Layer: 0
   m_Name: Mike_beard_013
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,9 +235,10 @@ GameObject:
   - component: {fileID: 33223747217892608}
   - component: {fileID: 23690853865398048}
   - component: {fileID: 114755479956075758}
+  - component: {fileID: 64408931197367296}
   m_Layer: 0
   m_Name: Mike_beard_01
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,9 +254,10 @@ GameObject:
   - component: {fileID: 33226147068740378}
   - component: {fileID: 23211352786340614}
   - component: {fileID: 114284918692917648}
+  - component: {fileID: 64225309531606444}
   m_Layer: 0
   m_Name: Mike_beard_010
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -297,9 +307,10 @@ GameObject:
   - component: {fileID: 33311623431359674}
   - component: {fileID: 23533555372755288}
   - component: {fileID: 114186941721282294}
+  - component: {fileID: 64712390530267038}
   m_Layer: 0
   m_Name: Mike_beard_014
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -315,9 +326,10 @@ GameObject:
   - component: {fileID: 33209648201276242}
   - component: {fileID: 23457636484735650}
   - component: {fileID: 114778051624407108}
+  - component: {fileID: 64540441216832798}
   m_Layer: 0
   m_Name: Mike_beard_02
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -333,9 +345,10 @@ GameObject:
   - component: {fileID: 33443272893530428}
   - component: {fileID: 23758465588626490}
   - component: {fileID: 114623874293768584}
+  - component: {fileID: 64239189438520792}
   m_Layer: 0
   m_Name: Mike_beard_07
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,9 +364,10 @@ GameObject:
   - component: {fileID: 33266189075810800}
   - component: {fileID: 23344179103692406}
   - component: {fileID: 114630252263415058}
+  - component: {fileID: 64756576597311064}
   m_Layer: 0
   m_Name: Mike_beard_08
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -369,9 +383,10 @@ GameObject:
   - component: {fileID: 33829491337510398}
   - component: {fileID: 23273226742897432}
   - component: {fileID: 114216902413633202}
+  - component: {fileID: 64180175788681318}
   m_Layer: 0
   m_Name: Mike_beard_011
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,9 +435,10 @@ GameObject:
   - component: {fileID: 33708367287084278}
   - component: {fileID: 23038691512488330}
   - component: {fileID: 114574487389799426}
+  - component: {fileID: 64724506206021890}
   m_Layer: 0
   m_Name: Mike_beard_012
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -455,9 +471,10 @@ GameObject:
   - component: {fileID: 33999206874342106}
   - component: {fileID: 23709217784598280}
   - component: {fileID: 114443432716963906}
+  - component: {fileID: 64621700880838594}
   m_Layer: 0
   m_Name: Mike_beard_09
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -473,9 +490,10 @@ GameObject:
   - component: {fileID: 33876597067738110}
   - component: {fileID: 23177403511470194}
   - component: {fileID: 114622686559057152}
+  - component: {fileID: 64216876098863940}
   m_Layer: 0
   m_Name: Mike_beard_017
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -491,9 +509,10 @@ GameObject:
   - component: {fileID: 33789554929119042}
   - component: {fileID: 23565287605408206}
   - component: {fileID: 114085370604807710}
+  - component: {fileID: 64608728417292112}
   m_Layer: 0
   m_Name: Mike_beard_016
-  m_TagString: Untagged
+  m_TagString: facialHair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1825,6 +1844,244 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1843283516473398}
   m_Mesh: {fileID: 4300024, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64010175759210582
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1228420121473866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300018, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64143515584082550
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1049712775528236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300012, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64180175788681318
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629776161749568}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300028, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64216876098863940
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903661469933556}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300040, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64225309531606444
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1321132434075318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300026, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64239189438520792
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1556765906626572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300020, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64397143330790594
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1243449316224214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300036, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64408931197367296
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1270306890066254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300008, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64540441216832798
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1555198835588628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300010, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64608728417292112
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1967220197096574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300038, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64616512880297378
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1153706832596996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300014, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64621700880838594
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1843283516473398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300024, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64712390530267038
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370296661841930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300034, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64724506206021890
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781999162085326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300030, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64739476375733770
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1162012250072734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300016, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64756576597311064
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1604086591338250}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300022, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
+--- !u!64 &64925483218214398
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258571505261310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300032, guid: 1c81b68ef93e48b448667bff92c10491, type: 3}
 --- !u!95 &95563933756769552
 Animator:
   serializedVersion: 3
@@ -1842,6 +2099,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114037699058039792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1064596207962548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2770cdf28e6bf404eae26ad3535f46f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childrenToShave: 0
+  shavingZeroByPercent: 0
 --- !u!114 &114067807223332180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1944,6 +2214,22 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1321132434075318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairCutValue: 5
+  dontCutThis: 0
+  ParticleEmmiter: {fileID: 1955386564232620, guid: b8735c1c4dbed5d4ca6171145f4f81ba,
+    type: 2}
+  ParticleEmmiter_LifeTime: 0
+--- !u!114 &114305707642289528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1064596207962548}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5854c82f63b70340a4ecf2317cc42d1, type: 3}
