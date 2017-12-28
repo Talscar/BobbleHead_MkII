@@ -3478,8 +3478,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originLocalRotation: {x: 0, y: 0, z: 0}
-  threshold: {x: 0, y: 0, z: 0}
-  dampning: 0
+  threshold: {x: 90, y: 45, z: 90}
+  dampning: 15
+  rb: {fileID: 0}
+  new_Force_Direction: {x: 0, y: 0, z: 0}
 --- !u!54 &2091667378
 Rigidbody:
   m_ObjectHideFlags: 0

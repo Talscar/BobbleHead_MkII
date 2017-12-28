@@ -17,8 +17,8 @@ public class customSpringJoint : MonoBehaviour {
     }
     public bounds bound_Threshold;
 
-    public float dampning;
-    Rigidbody rb;
+    public float dampning = 5f;
+    public Rigidbody rb;
     // Use this for initialization
 	void Start () {
         originLocalRotation = transform.eulerAngles;
@@ -37,15 +37,63 @@ public class customSpringJoint : MonoBehaviour {
         old_Threshold = threshold;
         return;
     }
+    public Vector3 new_Force_Direction;
 
+    void calculateRotation()
+    {
+
+        float forceMultiplier;
+
+        if (transform.eulerAngles.x < 360)
+        {
+
+            if (transform.eulerAngles.x < 180)
+            {
+                new_Force_Direction.x = -transform.eulerAngles.x * (1 / (originLocalRotation.x + threshold.x));// * transform.eulerAngles.x; 
+            }
+            else //It's 360
+            {
+                new_Force_Direction.x = (360 - transform.eulerAngles.x) * (1 / (originLocalRotation.x + threshold.x));// * transform.eulerAngles.x; 
+            }
+        }
+        if (transform.eulerAngles.y < 360)
+        {
+            if (transform.eulerAngles.y < 180)
+            {
+            new_Force_Direction.y = -transform.eulerAngles.y * (1 / (originLocalRotation.y + threshold.y));// * transform.eulerAngles.y; 
+            }
+            else //It's 360
+            {
+                new_Force_Direction.y = (360 - transform.eulerAngles.y) * (1 / (originLocalRotation.y + threshold.y));// * transform.eulerAngles.y; 
+            }
+        }
+
+        if (transform.eulerAngles.z < 360)
+        {
+            if (transform.eulerAngles.z < 180)
+            {
+                new_Force_Direction.z = -transform.eulerAngles.z * (1 / (originLocalRotation.z + threshold.z));// * transform.eulerAngles.z;
+            }
+            else //It's 360
+            {
+                new_Force_Direction.z = (360 - transform.eulerAngles.z) * (1 / (originLocalRotation.z + threshold.z));// * transform.eulerAngles.z;
+            }
+        }
+
+        return;
+    }
+    //void
 	// Update is called once per frame
 	void Update ()
     {
+        transform.position = position; //Game glitch RB moves the head position.
         if(old_Threshold != threshold)
         {
             recalculateThreshold();
         }
+        calculateRotation();
 
+        rb.AddTorque(new_Force_Direction * dampning);
         //transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, originLocalRotation, 0.001f);
         //Vector3 direction =  transform.eulerAngles - originLocalRotation;
         //rb.AddRelativeTorque(-direction * 0.1f);
@@ -53,6 +101,6 @@ public class customSpringJoint : MonoBehaviour {
         /// Get force
         /// Apply opposng force * 1.01
         //https://answers.unity.com/questions/407085/add-torque-at-position.html
-        transform.position = position; //Game glitch RB moves the head position.
+
     }
 }
