@@ -4,12 +4,34 @@ using UnityEngine;
 
 public class BobbleHeadStatistics : MonoBehaviour {
 
+
+    public Transform alt_pivotPointHead;
+    Rigidbody pivotPointBody;
+
     public GameObject particleDeathSmokeBurst;
     float delay;
     public float offset_Self_Destruction = 1.5f;
 
+    public Rigidbody getRigidBody()
+    {
+        return pivotPointBody;
+    }
+
     void Start()
     {
+        if(alt_pivotPointHead != null)
+        {
+            if(alt_pivotPointHead.GetComponent("Rigidbody") != null)
+            {
+                pivotPointBody = alt_pivotPointHead.GetComponent<Rigidbody>();
+                transform.parent = pivotPointBody.transform;
+            }
+            else
+            {
+                Debug.LogError("Failed to locate a Rigidbody on - " + alt_pivotPointHead);
+                //Application.Quit();
+            }
+        }
         //if (particleDeathSmokeBurst != null)
         //    if (particleDeathSmokeBurst.GetComponent("ParticleSystem") != null)
         //    {
