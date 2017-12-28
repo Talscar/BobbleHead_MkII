@@ -133,11 +133,23 @@ public class PlayerScreenPointToClick : MonoBehaviour {
                     }
                 if (hit.collider.gameObject.tag == "face")
                 {
-                    Rigidbody rb_2 = FindRigidBodyOnParents(hit.collider.gameObject);
+                    Rigidbody rb_2 = hit.collider.GetComponent<BobbleHeadStatistics>().getRigidBody();
+                    Debug.Log("Is rb_2 = to null? - " + rb_2 != null);
+                    //Rigidbody rb_2 = FindRigidBodyOnParents(hit.collider.gameObject);
                     if (rb_2 != null)
                     {
                         //Add force at hitPoint
                         rb_2.AddForceAtPosition(hitForce, hit.point);
+                        //rb_2.AddRelativeTorque(hitForce);
+                    }
+                    else
+                    {
+                        rb_2 = hit.collider.GetComponent<BobbleHeadStatistics>().getRigidBody();
+                        if(rb_2 != null)
+                        {
+                            rb_2.AddForceAtPosition(hitForce, hit.point);
+                            //rb_2.AddRelativeTorque(hitForce);
+                        }
                     }
                 }
 
