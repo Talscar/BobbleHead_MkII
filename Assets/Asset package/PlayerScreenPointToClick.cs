@@ -110,8 +110,9 @@ public class PlayerScreenPointToClick : MonoBehaviour {
             playerSwipeSpeed = (distance_Mouse / Time.deltaTime) / speedDensity_Mouse;
             mouseEnd = mousePos;
         Vector3 hitForce = dir * playerSwipeSpeed;
+        //hitForce = new Vector3(hitForce.x, hitForce.y, hitForce.z);
         //}
-
+        hitForce = new Vector3(-hitForce.x, hitForce.y, -hitForce.z);
 
         if (Input.GetButton("Fire1") && canDestroyBeard)
         {

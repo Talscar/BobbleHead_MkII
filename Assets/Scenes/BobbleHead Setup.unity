@@ -3477,7 +3477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cde633947e976e4b8cb0f1fa7ba1536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: {x: 25, y: 15, z: 45}
+  threshold: {x: 25, y: 15, z: 25}
   dampning: 600
   newTorque: {x: 0, y: 0, z: 0}
 --- !u!54 &2091667378

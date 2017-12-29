@@ -32,6 +32,10 @@ public class BobbleHeadStatistics : MonoBehaviour {
                 //Application.Quit();
             }
         }
+        else
+        {
+            pivotPointBody = transform.GetComponent<Rigidbody>();
+        }
         //if (particleDeathSmokeBurst != null)
         //    if (particleDeathSmokeBurst.GetComponent("ParticleSystem") != null)
         //    {
