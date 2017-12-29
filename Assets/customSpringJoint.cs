@@ -3,22 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class customSpringJoint : MonoBehaviour {
-
-
-    public Vector3 originLocalRotation;
+    [Tooltip("Threshold in which the opposing force will react and present more force in the opposing direction.")]
     public Vector3 threshold;
+    [Tooltip("Increases the weight to which the spring will react in the opposing direction.")]
+    public float dampning = 600f;
+
+    Vector3 originLocalRotation;
     Vector3 old_Threshold;
-
     Vector3 position;
-    public struct bounds
-    {
-       [SerializeField] public Vector3 bounds_A;
-       [SerializeField] public Vector3 bounds_B;
-    }
-    public bounds bound_Threshold;
 
-    public float dampning = 5f;
-    public Rigidbody rb;
+    Rigidbody rb;
     // Use this for initialization
 	void Start () {
         originLocalRotation = transform.eulerAngles;
@@ -29,15 +23,10 @@ public class customSpringJoint : MonoBehaviour {
 	
     void recalculateThreshold()
     {
-        //If number is greater than originLocalRotation
-        bound_Threshold.bounds_A = originLocalRotation + threshold; 
-        
-        //If number is less than originLocalRotation
-        bound_Threshold.bounds_B = originLocalRotation - threshold;
         old_Threshold = threshold;
         return;
     }
-    public Vector3 new_Force_Direction;
+    Vector3 new_Force_Direction;
 
     void calculateRotation()
     {
@@ -83,8 +72,12 @@ public class customSpringJoint : MonoBehaviour {
         return;
     }
     //void
-	// Update is called once per frame
-	void Update ()
+
+    [SerializeField]
+    private Vector3 newTorque;
+
+    // Update is called once per frame
+    void Update ()
     {
         transform.position = position; //Game glitch RB moves the head position.
         if(old_Threshold != threshold)
@@ -93,7 +86,11 @@ public class customSpringJoint : MonoBehaviour {
         }
         calculateRotation();
 
-        rb.AddTorque(new_Force_Direction * dampning);
+        newTorque = new_Force_Direction * dampning;
+        rb.AddTorque((new_Force_Direction * dampning)/*New way to lower the new force*/);
+        rb.angularVelocity = rb.angularVelocity * 0.9f;
+
+        //Vector3 force = rb.
         //transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, originLocalRotation, 0.001f);
         //Vector3 direction =  transform.eulerAngles - originLocalRotation;
         //rb.AddRelativeTorque(-direction * 0.1f);

@@ -3477,11 +3477,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cde633947e976e4b8cb0f1fa7ba1536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originLocalRotation: {x: 0, y: 0, z: 0}
-  threshold: {x: 90, y: 45, z: 90}
-  dampning: 15
-  rb: {fileID: 0}
-  new_Force_Direction: {x: 0, y: 0, z: 0}
+  threshold: {x: 25, y: 15, z: 45}
+  dampning: 600
+  newTorque: {x: 0, y: 0, z: 0}
 --- !u!54 &2091667378
 Rigidbody:
   m_ObjectHideFlags: 0
