@@ -13,12 +13,15 @@ public class customSpringJoint : MonoBehaviour {
     Vector3 position;
 
     Rigidbody rb;
+
     // Use this for initialization
-	void Start () {
+    void Start () {
+        transform.eulerAngles = Vector3.zero;
         originLocalRotation = transform.eulerAngles;
         rb = transform.GetComponent<Rigidbody>();
         old_Threshold = threshold;
         position = transform.position;
+
 	}
 	
     void recalculateThreshold()

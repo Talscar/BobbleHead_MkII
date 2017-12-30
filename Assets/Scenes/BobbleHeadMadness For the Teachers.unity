@@ -4061,9 +4061,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "TO DO LIST:\n- Bobble Mechanic\n- Add Timer\n- Fix Particles for hair\n-
-    Develop enviroments\n- Leaderboards\n- Reset score\n- Visual improvements \nto
-    beards\n- Better UI\n- UI Interactions\n- Feedback and Tests\n- Polish\n"
+  m_Text: "TO DO LIST:\n- Add Timer\n- Fix Particles for hair\n- Develop enviroments\n-
+    Leaderboards\n- Reset score\n- Visual improvements \nto beards\n- Better UI\n-
+    UI Interactions\n- Feedback and Tests\n- Polish\n"
 --- !u!222 &807177413
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4877,8 +4877,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -201, y: 274}
-  m_SizeDelta: {x: 1800, y: 1000}
+  m_AnchoredPosition: {x: -201, y: 222}
+  m_SizeDelta: {x: 1800, y: 1100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1689370904
 MonoBehaviour:
@@ -4912,10 +4912,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Alpha 1.1 - Mobile build\nIt has taken along time \nto get to this point,
-    \nand we have learned a \ngreat deal from awesome \nteachers. We wish to \nshare
-    what we have \nlearned though \ndeveloping this game \ninto the new year.\n\nMerry
-    Christmas!"
+  m_Text: "Alpha 2.0 - Mobile build\nHappy new year! 31/12/2017\n\nStarted - 07/12/2017\nCurrent
+    - 31/12/2017\n\nDesign -\n\tMichael Gackle\n\tLachlan Shearer\nArt -\n\tPriscilla
+    Parrot\nProgramming -\n\tMichael Gackle"
 --- !u!222 &1689370905
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5461,6 +5460,11 @@ Prefab:
       propertyPath: scoreKeeping_Text
       value: 
       objectReference: {fileID: 1672838174}
+    - target: {fileID: 114030602336691710, guid: abf3020b645d14b4ca5e131728de17ab,
+        type: 2}
+      propertyPath: isMobile
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: abf3020b645d14b4ca5e131728de17ab, type: 2}
   m_IsPrefabParent: 0
