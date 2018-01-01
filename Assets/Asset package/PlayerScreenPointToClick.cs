@@ -116,6 +116,7 @@ public class PlayerScreenPointToClick : MonoBehaviour {
 
         if (Input.GetButton("Fire1") && canDestroyBeard)
         {
+            Debug.LogError("Vector direction based on rotation is incorrect. Line 107 and 115.");
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition + new Vector3(0, 0, 0));
             Debug.DrawRay(ray.origin, ray.direction * 10, Color.yellow);
