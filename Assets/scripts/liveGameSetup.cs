@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class liveGameSetup : MonoBehaviour {
 
-    Transform mainCamera = null;
+    public Transform mainCamera = null;
 
     [System.Serializable] public struct levelProgression
     {
@@ -30,7 +30,7 @@ public class liveGameSetup : MonoBehaviour {
     }
 
 
-    public int highestNumericValue = 0;
+
     /// <summary>
     /// When called, it will verify the transforms that are children of this transform, and then process them for naming conventions. Return then repeat.
     /// </summary>
@@ -346,9 +346,7 @@ public class liveGameSetup : MonoBehaviour {
         return null;
     }
 
-    public Transform a;
-    public Transform b;
-    public int b_Position;
+
 
     //bool go = false;
     /// <summary>
@@ -397,7 +395,32 @@ public class liveGameSetup : MonoBehaviour {
             }
             else if (rotateCamera) //Time speed delay variables
             {
-                mainCamera.eulerAngles = Vector3.Lerp(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles, travelSpeedOverTime);
+
+                ///Rotation pass filter from 360 to 0 equal to 361 = 0
+                if (movePoints[currentTransform].moveTo.eulerAngles.y < 180)
+                {
+                    if (mainCamera.eulerAngles.y > 180)
+                    {
+                        if (movePoints[currentTransform].moveTo.eulerAngles.y < 45)
+                        {
+                            mainCamera.eulerAngles = Vector3.Lerp(mainCamera.eulerAngles, new Vector3(movePoints[currentTransform].moveTo.eulerAngles.x, 361, movePoints[currentTransform].moveTo.eulerAngles.z), travelSpeedOverTime);
+                        }
+                        else
+                        {
+                            mainCamera.eulerAngles = Vector3.Lerp(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles, travelSpeedOverTime);
+                        }
+                    }
+                    else
+                    {
+                        mainCamera.eulerAngles = Vector3.Lerp(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles, travelSpeedOverTime);
+                    }
+                }
+                else
+                {
+                    mainCamera.eulerAngles = Vector3.Lerp(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles, travelSpeedOverTime);
+                }
+                ///Rotation pass filter from 360 to 0 equal to 361 = 0
+
                 float distance = Vector3.Distance(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles);
                 if (distance < distanceSensitivity)
                 {
@@ -458,15 +481,15 @@ public class liveGameSetup : MonoBehaviour {
     {
         if (!nextPosition)
         {
-            mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(true);
             nextPosition = true;
+            mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(true);
         }
     }
 
     public void headCompleted()
     {
-        mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(false);
         nextPosition = true;
+        mainCamera.GetComponent<PlayerScreenPointToClick>().nextHead(false);
     }
 
     [Header("Camera transform tuning tools")]
@@ -475,13 +498,19 @@ public class liveGameSetup : MonoBehaviour {
     public float timeSpeedDelayVariblesBetweenTransitions = 1.6f;
     [SerializeField] private float MoveAtTime = 0;
     [Header("To be Private variables")]
-    public bool nextPosition = true;
-    public bool positionCamera = false;
-    public bool rotateCamera = false;
-    public int currentTransform = 0;
+    bool nextPosition = true;
+    bool positionCamera = false;
+    bool rotateCamera = false;
+    int currentTransform = 0;
     // Update is called once per frame
 
-    public bool preClick = true;
+    int highestNumericValue = 0;
+
+    Transform a;
+    Transform b;
+    int b_Position;
+
+    bool preClick = true;
 
     public void HairSet_Complete()
     {

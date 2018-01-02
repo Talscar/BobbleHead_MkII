@@ -8,6 +8,9 @@ public class customSpringJoint : MonoBehaviour {
     [Tooltip("Increases the weight to which the spring will react in the opposing direction.")]
     public float dampning = 600f;
 
+    [Tooltip("Weight and hardness of the spring joint.")]
+    public float springWeight = 0.9f;
+
     Vector3 originLocalRotation;
     Vector3 old_Threshold;
     Vector3 position;
@@ -91,7 +94,7 @@ public class customSpringJoint : MonoBehaviour {
 
         newTorque = new_Force_Direction * dampning;
         rb.AddTorque((new_Force_Direction * dampning)/*New way to lower the new force*/);
-        rb.angularVelocity = rb.angularVelocity * 0.9f;
+        rb.angularVelocity = rb.angularVelocity * springWeight;
 
         //Vector3 force = rb.
         //transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, originLocalRotation, 0.001f);

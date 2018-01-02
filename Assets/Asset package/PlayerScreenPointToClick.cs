@@ -114,20 +114,21 @@ public class PlayerScreenPointToClick : MonoBehaviour {
             ///Math.Cos((Math.PI / 180) * 90)
             // 0 degrees = (1, 0, 0) and 90 = (0, 0, 1)
             //
-            directionCorrection = new Vector3((90f - transform.eulerAngles.y) * vectorValue, 0, transform.eulerAngles.y * vectorValue);
+            directionCorrection = new Vector3((90f - transform.eulerAngles.y) * vectorValue, 0, -(transform.eulerAngles.y * vectorValue));
            // Debug.Log("1 / 90 = "  + vectorValue + "; " + "< 90 is " + (vectorValue * transform.eulerAngles.y ) + " = " + transform.eulerAngles.y + " * " + vectorValue + ";");
         }
         else if(transform.eulerAngles.y < 180)
         {
-            directionCorrection = new Vector3(-(vectorValue * (transform.eulerAngles.y - 90f)), 0, (180f - transform.eulerAngles.y) * vectorValue);
+            directionCorrection = new Vector3(-(vectorValue * (transform.eulerAngles.y - 90f)), 0, -(180f - transform.eulerAngles.y) * vectorValue);
         }
         else if(transform.eulerAngles.y < 270)
         {
-            directionCorrection = new Vector3(-(vectorValue * (transform.eulerAngles.y - 180f)), 0, -((270f - transform.eulerAngles.y) * vectorValue));
+            directionCorrection = new Vector3(-(vectorValue * (transform.eulerAngles.y - 180f)), 0, ((270f - transform.eulerAngles.y) * vectorValue));
+            Debug.Log("270*");
         }
         else if( transform.eulerAngles.y < 360)
         {
-            directionCorrection = new Vector3(vectorValue * (transform.eulerAngles.y - 270f), 0, -((360f - transform.eulerAngles.y) * vectorValue));
+            directionCorrection = new Vector3((vectorValue * (transform.eulerAngles.y - 270f)), 0, ((360f - transform.eulerAngles.y) * vectorValue));
         }
         else
         {
