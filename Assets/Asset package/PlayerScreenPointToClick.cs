@@ -96,26 +96,77 @@ public class PlayerScreenPointToClick : MonoBehaviour {
         return;
     }
 
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    Vector3 directionCorrection()
+    {
+
+        Debug.LogError("Requires tweaking to get progression to feel correct and hit direction to function as intended! DO NOT OVERLOOK THIS MESSAGE!");
+        //transform
+        Vector3 directionCorrection = new Vector3();
+        float vectorValue = 1f / 90f;
+        if(transform.eulerAngles.y < 90)
+        {
+            //
+            ///Math.Cos((Math.PI / 180) * 90)
+            // 0 degrees = (1, 0, 0) and 90 = (0, 0, 1)
+            //
+            directionCorrection = new Vector3((90f - transform.eulerAngles.y) * vectorValue, 0, transform.eulerAngles.y * vectorValue);
+           // Debug.Log("1 / 90 = "  + vectorValue + "; " + "< 90 is " + (vectorValue * transform.eulerAngles.y ) + " = " + transform.eulerAngles.y + " * " + vectorValue + ";");
+        }
+        else if(transform.eulerAngles.y < 180)
+        {
+            directionCorrection = new Vector3(-(vectorValue * (transform.eulerAngles.y - 90f)), 0, (180f - transform.eulerAngles.y) * vectorValue);
+        }
+        else if(transform.eulerAngles.y < 270)
+        {
+            directionCorrection = new Vector3(-(vectorValue * (transform.eulerAngles.y - 180f)), 0, -((270f - transform.eulerAngles.y) * vectorValue));
+        }
+        else if( transform.eulerAngles.y < 360)
+        {
+            directionCorrection = new Vector3(vectorValue * (transform.eulerAngles.y - 270f), 0, -((360f - transform.eulerAngles.y) * vectorValue));
+        }
+        else
+        {
+            Debug.LogError("PlayerScreenPointToClick.cs rotation is out of range! and is greater than 360");
+        }
+        return directionCorrection;
+    }
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="multiplier"></param>
+    /// <param name="toCorrectThisDirection"></param>
+    /// <returns></returns>
+    Vector3 correctThisDirection(Vector3 multiplier, Vector3 toCorrectThisDirection)
+    {
+      return new Vector3(toCorrectThisDirection.x * multiplier.x, toCorrectThisDirection.y, toCorrectThisDirection.x * multiplier.z);
+    }
+    public Vector3 dir;
+    public Vector3 directionFromImpact;
+    public Vector3 directionalMultiplier;
     //Vector3[] ray_FireLocations;
     void Update () {
-        //Ray ray = cam.ScreenPointToRay(new Vector3(200, 200, 0));
-        //Debug.DrawRay(ray.origin, ray.direction * 10, Color.yellow);
-        //if(tim)
-        mousePos = Input.mousePosition;
-        //if(mouseEnd != mousePos)
-        //{
-        Vector3 dir = mousePos - mouseEnd;
+
+            mousePos = Input.mousePosition;
+
+        if (Input.GetButton("Fire1") && canDestroyBeard)
+        {
+
+        dir = mousePos - mouseEnd;
  
             float distance_Mouse = Vector3.Distance(mousePos, mouseEnd);
             playerSwipeSpeed = (distance_Mouse / Time.deltaTime) / speedDensity_Mouse;
             mouseEnd = mousePos;
         Vector3 hitForce = dir * playerSwipeSpeed;
-        //hitForce = new Vector3(hitForce.x, hitForce.y, hitForce.z);
-        //}
-        hitForce = new Vector3(-hitForce.x, hitForce.y, -hitForce.z);
-
-        if (Input.GetButton("Fire1") && canDestroyBeard)
-        {
+        hitForce = new Vector3(hitForce.x, hitForce.y, hitForce.z);
+        Vector3 directionToCorrect = directionCorrection();
+        directionalMultiplier = directionToCorrect;
+        hitForce = correctThisDirection(directionToCorrect, hitForce);
+        directionFromImpact = hitForce;
             Debug.LogError("Vector direction based on rotation is incorrect. Line 107 and 115.");
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition + new Vector3(0, 0, 0));
