@@ -395,31 +395,7 @@ public class liveGameSetup : MonoBehaviour {
             }
             else if (rotateCamera) //Time speed delay variables
             {
-
-                ///Rotation pass filter from 360 to 0 equal to 361 = 0
-                if (movePoints[currentTransform].moveTo.eulerAngles.y < 180)
-                {
-                    if (mainCamera.eulerAngles.y > 180)
-                    {
-                        if (movePoints[currentTransform].moveTo.eulerAngles.y < 45)
-                        {
-                            mainCamera.eulerAngles = Vector3.Lerp(mainCamera.eulerAngles, new Vector3(movePoints[currentTransform].moveTo.eulerAngles.x, 361, movePoints[currentTransform].moveTo.eulerAngles.z), travelSpeedOverTime);
-                        }
-                        else
-                        {
-                            mainCamera.eulerAngles = Vector3.Lerp(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles, travelSpeedOverTime);
-                        }
-                    }
-                    else
-                    {
-                        mainCamera.eulerAngles = Vector3.Lerp(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles, travelSpeedOverTime);
-                    }
-                }
-                else
-                {
-                    mainCamera.eulerAngles = Vector3.Lerp(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles, travelSpeedOverTime);
-                }
-                ///Rotation pass filter from 360 to 0 equal to 361 = 0
+                mainCamera.eulerAngles = LerpThisAngle(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles, travelSpeedOverTime); //Suggested by Dr Mike Cooper 4/1/2018 around 5PM
 
                 float distance = Vector3.Distance(mainCamera.eulerAngles, movePoints[currentTransform].moveTo.eulerAngles);
                 if (distance < distanceSensitivity)
@@ -475,6 +451,11 @@ public class liveGameSetup : MonoBehaviour {
             //}
             //if()
         }
+    }
+
+    Vector3 LerpThisAngle(Vector3 a, Vector3 b, float t)
+    {
+        return new Vector3(Mathf.LerpAngle(a.x, b.x, t), Mathf.LerpAngle(a.y, b.y, t), Mathf.LerpAngle(a.z, b.z, t));
     }
 
     public void skipHead()
