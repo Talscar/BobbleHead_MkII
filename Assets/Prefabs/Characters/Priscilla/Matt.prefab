@@ -2104,8 +2104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cde633947e976e4b8cb0f1fa7ba1536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: {x: 25, y: 15, z: 25}
-  dampning: 600
+  threshold: {x: 40, y: 30, z: 40}
+  dampning: 300
+  springWeight: 0.97
   newTorque: {x: 0, y: 0, z: 0}
 --- !u!114 &114905151896347102
 MonoBehaviour:

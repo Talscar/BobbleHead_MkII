@@ -1893,6 +1893,28 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1121782190}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1154225506 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1388880172970226, guid: 0d50e17ef60e7da469b3a099e1a612ed,
+    type: 2}
+  m_PrefabInternal: {fileID: 1208609829}
+--- !u!114 &1154225507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154225506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42db179532e696f429b220baed398ca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+  - m_HighScore: 0
+    m_Username: 
+    m_HairsCutSuccessfully: 0
+    m_HairsCutUnsuccessfully: 0
+    m_ScorePool: 0
 --- !u!1001 &1208609829
 Prefab:
   m_ObjectHideFlags: 0
