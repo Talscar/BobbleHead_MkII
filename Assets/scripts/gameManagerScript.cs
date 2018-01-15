@@ -23,7 +23,8 @@ public class gameManagerScript : MonoBehaviour {
     /// <param name="time_TimetimeStart">When the match started!<param name="time_TimetimeStart"></param></param>
     public float time_TimetimeStart = 0; //When the game started
 
-	void Start () {
+	void Awake () {
+        DontDestroyOnLoad(gameObject);
         player = FindObjectOfType<PlayerScreenPointToClick>();
         player.DestroyBeard = false;
         if (StartGame_Button != null)
@@ -64,6 +65,15 @@ public class gameManagerScript : MonoBehaviour {
         {
             StartGame_Button.gameObject.SetActive(true);
         }
+        playerProfile.m_profile thisData = new playerProfile.m_profile();
+        {
+            thisData.highScore = player.myScore.points;
+            thisData.username = player.myScore.player_Name;
+            thisData.hairsCutSuccessfully = player.myScore.Successful_hairsCut;
+            thisData.hairsCutUnsuccessfully = player.myScore.Unsuccessful_hairsCut;
+        }
+        //thisData.scorePool = pl
+        playerProfile.main.updateData(thisData);
     }
 	// Update is called once per frame
 	void Update () {

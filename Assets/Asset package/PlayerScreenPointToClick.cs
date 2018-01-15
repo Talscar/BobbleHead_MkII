@@ -48,6 +48,7 @@ public class PlayerScreenPointToClick : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        playerProfile.main.loadProfiles();
         cam = GetComponent<Camera>();
 
         if (isMobile)
