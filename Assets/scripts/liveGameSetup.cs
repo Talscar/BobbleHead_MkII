@@ -18,7 +18,7 @@ public class liveGameSetup : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-
+        FindObjectOfType<gameManagerScript>().returnLiveGameSetup(this);
         Transform[] children = GetComponentsInChildren<Transform>();
         mainCamera = Camera.main.gameObject.transform;
         player = mainCamera.GetComponent<PlayerScreenPointToClick>();

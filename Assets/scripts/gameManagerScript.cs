@@ -39,6 +39,14 @@ public class gameManagerScript : MonoBehaviour {
     public UnityEngine.UI.Button StartGame_Button;
     public UnityEngine.UI.Text CountDown;
     public float thisTime;
+
+    private liveGameSetup thisSceneGameSetup_Transforms_Cams;
+    public void returnLiveGameSetup(liveGameSetup thisLiveGameSetup)
+    {
+        thisSceneGameSetup_Transforms_Cams = thisLiveGameSetup;
+        return;
+    }
+
     //bool canInteract;
     /// <summary>
     /// When the game starts, it processes a timer and calculates when the game start and initilizes player ability to interact with world objects or not.
@@ -54,6 +62,13 @@ public class gameManagerScript : MonoBehaviour {
     }
 
     [SerializeField]public static bool running = false;
+
+    //live
+    //liveGameSetup thisSetup;
+    //public liveGameSetup currentRig()
+    //{
+        
+    //}
     /// <summary>
     /// When the game ends, it processes a timer and calculates the end game time to dissable the players ability to interact with the world objects.
     /// </summary>
@@ -74,6 +89,15 @@ public class gameManagerScript : MonoBehaviour {
         }
         //thisData.scorePool = pl
         playerProfile.main.updateData(thisData);
+        player.myScore.points = 0; //thisData.highScore;
+        //thisData.username = player.myScore.player_Name;
+        player.myScore.Successful_hairsCut = 0;//thisData.hairsCutSuccessfully;
+        player.myScore.Unsuccessful_hairsCut = 0;// thisData.hairsCutUnsuccessfully;
+        //player.c
+        thisSceneGameSetup_Transforms_Cams.headCompleted();
+        player.myScore.facesDone = 0;
+        //player.nextHead(false);
+        Debug.Log("Score Resets.");
     }
 	// Update is called once per frame
 	void Update () {

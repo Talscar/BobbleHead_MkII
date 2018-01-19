@@ -16,10 +16,15 @@ public class playerProfile: MonoBehaviour {
 
     [System.Serializable]public struct m_profile
     {
+        [SerializeField]
         private int m_HighScore;
+        [SerializeField]
         private string m_Username;
+        [SerializeField]
         private int m_HairsCutSuccessfully;
+        [SerializeField]
         private int m_HairsCutUnsuccessfully;
+        [SerializeField]
         private int m_ScorePool;
 
         public int highScore
@@ -100,6 +105,7 @@ public class playerProfile: MonoBehaviour {
         return newData;
     }
 
+    //public void scoreRese
 
     public void saveProfiles()
     {
