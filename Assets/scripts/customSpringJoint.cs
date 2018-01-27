@@ -11,7 +11,7 @@ public class customSpringJoint : MonoBehaviour {
     [Tooltip("Weight and hardness of the spring joint.")]
     public float springWeight = 0.9f;
 
-    Vector3 originLocalRotation;
+    [SerializeField] private Vector3 originLocalRotation;
     Vector3 old_Threshold;
     Vector3 position;
 
@@ -19,11 +19,13 @@ public class customSpringJoint : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        dampning = 15000;
         transform.eulerAngles = Vector3.zero;
         originLocalRotation = transform.eulerAngles;
         rb = transform.GetComponent<Rigidbody>();
         old_Threshold = threshold;
         position = transform.position;
+        Debug.LogWarning("calculateRotation() could be more efficient... Maybe!");
 
 	}
 	
@@ -38,28 +40,28 @@ public class customSpringJoint : MonoBehaviour {
     {
 
         float forceMultiplier;
-
+        Vector3 rotationWithThreshold = originLocalRotation + threshold;
         if (transform.eulerAngles.x < 360)
         {
 
             if (transform.eulerAngles.x < 180)
             {
-                new_Force_Direction.x = -transform.eulerAngles.x * (1 / (originLocalRotation.x + threshold.x));// * transform.eulerAngles.x; 
+                new_Force_Direction.x = -transform.eulerAngles.x * (1 / rotationWithThreshold.x/*(originLocalRotation.x + threshold.x)*/);// * transform.eulerAngles.x; 
             }
             else //It's 360
             {
-                new_Force_Direction.x = (360 - transform.eulerAngles.x) * (1 / (originLocalRotation.x + threshold.x));// * transform.eulerAngles.x; 
+                new_Force_Direction.x = (360 - transform.eulerAngles.x) * (1 / rotationWithThreshold.x/*(originLocalRotation.x + threshold.x)*/);// * transform.eulerAngles.x; 
             }
         }
         if (transform.eulerAngles.y < 360)
         {
             if (transform.eulerAngles.y < 180)
             {
-            new_Force_Direction.y = -transform.eulerAngles.y * (1 / (originLocalRotation.y + threshold.y));// * transform.eulerAngles.y; 
+            new_Force_Direction.y = -transform.eulerAngles.y * (1 / rotationWithThreshold.y/*(originLocalRotation.y + threshold.y)*/);// * transform.eulerAngles.y; 
             }
             else //It's 360
             {
-                new_Force_Direction.y = (360 - transform.eulerAngles.y) * (1 / (originLocalRotation.y + threshold.y));// * transform.eulerAngles.y; 
+                new_Force_Direction.y = (360 - transform.eulerAngles.y) * (1 / rotationWithThreshold.y/*(originLocalRotation.y + threshold.y)*/);// * transform.eulerAngles.y; 
             }
         }
 
@@ -67,11 +69,11 @@ public class customSpringJoint : MonoBehaviour {
         {
             if (transform.eulerAngles.z < 180)
             {
-                new_Force_Direction.z = -transform.eulerAngles.z * (1 / (originLocalRotation.z + threshold.z));// * transform.eulerAngles.z;
+                new_Force_Direction.z = -transform.eulerAngles.z * (1 / rotationWithThreshold.z/*(originLocalRotation.z + threshold.z)*/);// * transform.eulerAngles.z;
             }
             else //It's 360
             {
-                new_Force_Direction.z = (360 - transform.eulerAngles.z) * (1 / (originLocalRotation.z + threshold.z));// * transform.eulerAngles.z;
+                new_Force_Direction.z = (360 - transform.eulerAngles.z) * (1 / rotationWithThreshold.z/*(originLocalRotation.z + threshold.z)*/);// * transform.eulerAngles.z;
             }
         }
 
@@ -92,9 +94,9 @@ public class customSpringJoint : MonoBehaviour {
         }
         calculateRotation();
 
-        newTorque = new_Force_Direction * dampning;
-        rb.AddTorque((new_Force_Direction * dampning)/*New way to lower the new force*/);
-        rb.angularVelocity = rb.angularVelocity * springWeight;
+        newTorque = (new_Force_Direction * dampning) * Time.deltaTime;
+        rb.AddTorque(((new_Force_Direction * dampning) * Time.deltaTime)/*New way to lower the new force*/);
+        rb.angularVelocity = (rb.angularVelocity * springWeight);
 
         //Vector3 force = rb.
         //transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, originLocalRotation, 0.001f);

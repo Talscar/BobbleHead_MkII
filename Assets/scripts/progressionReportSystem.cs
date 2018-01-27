@@ -13,7 +13,8 @@ public class progressionReportSystem : MonoBehaviour {
     [Tooltip("It has to instantiate at THIS Specific location. So be happy with where it resides!")]
     public GameObject[] MultipleHeadsToShave;
     //GameObject insantiatedRefrence;
-
+    ////////////////////////////////////public bool usingCustomPrefrence;
+    ////////////////////////////////////public customSpringJoint springPrefrence;
     void Awake()
     {
         //PRS_ this;
@@ -21,6 +22,8 @@ public class progressionReportSystem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //PRS_ = this;
+        //if(springPrefrence != null)
+        //{ }
 		        Debug.Log("Incomplete Script functionality!");
         ///Requires:
         /// liveGameSetup script link from parent!
@@ -50,6 +53,12 @@ public class progressionReportSystem : MonoBehaviour {
         {
             int rng = Random.Range(0, MultipleHeadsToShave.Length);
             instantiatedReference = Instantiate(MultipleHeadsToShave[rng], transform);
+            ////////////////////////////if (usingCustomPrefrence)
+            ////////////////////////////{
+            ////////////////////////////    customSpringJoint item = instantiatedReference.GetComponentInChildren<customSpringJoint>();// = springPrefrence;
+            ////////////////////////////                                                                                               //item. = springPrefrence;
+            ////////////////////////////    item = springPrefrence;
+            ////////////////////////////}
             return this.transform;
         }
         else return null;

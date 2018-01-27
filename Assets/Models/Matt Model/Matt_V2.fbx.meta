@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 3aba7479b87d0c64eabd413006ad4d51
+timeCreated: 1517037716
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Matt_beard
+    100002: Matt_beard_01
+    100004: Matt_beard_010
+    100006: Matt_beard_011
+    100008: Matt_beard_02
+    100010: Matt_beard_03
+    100012: Matt_beard_04
+    100014: Matt_beard_05
+    100016: Matt_beard_06
+    100018: Matt_beard_07
+    100020: Matt_beard_08
+    100022: Matt_beard_09
+    100024: Matt_Body
+    100026: Matt_hair_low
+    100028: Matt_Head
+    100030: //RootNode
+    400000: Matt_beard
+    400002: Matt_beard_01
+    400004: Matt_beard_010
+    400006: Matt_beard_011
+    400008: Matt_beard_02
+    400010: Matt_beard_03
+    400012: Matt_beard_04
+    400014: Matt_beard_05
+    400016: Matt_beard_06
+    400018: Matt_beard_07
+    400020: Matt_beard_08
+    400022: Matt_beard_09
+    400024: Matt_Body
+    400026: Matt_hair_low
+    400028: Matt_Head
+    400030: //RootNode
+    2300000: Matt_beard_01
+    2300002: Matt_beard_010
+    2300004: Matt_beard_011
+    2300006: Matt_beard_02
+    2300008: Matt_beard_03
+    2300010: Matt_beard_04
+    2300012: Matt_beard_05
+    2300014: Matt_beard_06
+    2300016: Matt_beard_07
+    2300018: Matt_beard_08
+    2300020: Matt_beard_09
+    2300022: Matt_Body
+    2300024: Matt_hair_low
+    2300026: Matt_Head
+    3300000: Matt_beard_01
+    3300002: Matt_beard_010
+    3300004: Matt_beard_011
+    3300006: Matt_beard_02
+    3300008: Matt_beard_03
+    3300010: Matt_beard_04
+    3300012: Matt_beard_05
+    3300014: Matt_beard_06
+    3300016: Matt_beard_07
+    3300018: Matt_beard_08
+    3300020: Matt_beard_09
+    3300022: Matt_Body
+    3300024: Matt_hair_low
+    3300026: Matt_Head
+    4300000: Matt_Body
+    4300002: Matt_Head
+    4300004: Matt_hair_low
+    4300006: Matt_beard_03
+    4300008: Matt_beard_04
+    4300010: Matt_beard_09
+    4300012: Matt_beard_010
+    4300014: Matt_beard_011
+    4300016: Matt_beard_08
+    4300018: Matt_beard_06
+    4300020: Matt_beard_05
+    4300022: Matt_beard_01
+    4300024: Matt_beard_02
+    4300026: Matt_beard_07
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
