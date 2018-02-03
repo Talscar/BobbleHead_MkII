@@ -31,8 +31,9 @@ public class gameManagerScript : MonoBehaviour {
         {
             StartGame_Button.onClick.AddListener(gameStart);
         }
+        Menu.GetComponent<myMenuController>().actSelf(true);
         //time += time_ToComplete + time_TillStart;
-	}
+    }
 
 
     PlayerScreenPointToClick player;
@@ -53,6 +54,7 @@ public class gameManagerScript : MonoBehaviour {
     /// </summary>
     void gameStart()
     {
+        Menu.GetComponent<myMenuController>().actSelf(false);
         time_TimetimeStart = Time.time;
 
         //time_TimetimeStart = time;
@@ -74,6 +76,7 @@ public class gameManagerScript : MonoBehaviour {
     /// </summary>
     void gameEnd()
     {
+        Menu.GetComponent<myMenuController>().actSelf(true);
         running = false;
         player.DestroyBeard = false;
         if(StartGame_Button != null)
@@ -98,8 +101,27 @@ public class gameManagerScript : MonoBehaviour {
         player.myScore.facesDone = 0;
         //player.nextHead(false);
         Debug.Log("Score Resets.");
+        //Menu.SetActive(true);
     }
-	// Update is called once per frame
+    // Update is called once per frame
+    public GameObject Menu;
+        //*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
+
+    ////////////public delegate void functionList();
+    ////////////public static event functionList OnCall;
+    //public static functionList modularFunction;//List<functionList> modularFunction = new List<functionList>();
+    //void OnGUI()
+    //{
+    //    if(GUI.Button(new Rect(Screen.width / 2 - 50, 5, 100, 30), "Click"))
+    //    {
+    //        if(OnClicked != null)
+    //        {
+    //            OnClicked();
+    //        }
+    //    }
+    //}
+    //[SerializeField] public functionList modularFunction;
+
 	void Update () {
         thisTime = Time.time;
         if (running)

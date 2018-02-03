@@ -64,7 +64,7 @@ public class menuManager : MonoBehaviour {
         }
         Debug.Log("NewSelections DATA: - " + newSelections.Length);
  
-        Debug.Log("InputData.Length beach = " + inputData.Length);
+        Debug.Log("InputData.Length beach = " + inputData.Length + " : " + inputData[inputData.Length - 1] + " - "+ inputData[0]);
         return newSelections[inputData[0]];//new pageData();
     }
 
@@ -73,16 +73,16 @@ public class menuManager : MonoBehaviour {
         ///METHOD: recursedPage
         //pageProgress[nextPage - 1].p
         int[] newData;// = new int[pageProgress.Length];
-        if (pageProgress != null)
-        {
-            newData = new int[pageProgress.Length];
-            newData[pageProgress.Length - 1] = nextPage;
-        }
-        else
+        if (pageProgress.Length > 0)
         {
             newData = new int[1];
             newData[0] = nextPage;
             pageProgress = newData;
+        }
+        else
+        {
+            newData = new int[pageProgress.Length + 1];
+            newData[pageProgress.Length - 1] = nextPage;
         }  
         pageData thisData = recursedPage(newData);
         thisData.pageObject.SetActive(false);

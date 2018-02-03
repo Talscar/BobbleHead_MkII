@@ -1,0 +1,152 @@
+fileFormatVersion: 2
+guid: aaf98d142c2d9c146bfa9e146a09079e
+timeCreated: 1517258472
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Adam_beard
+    100002: Adam_beard_01
+    100004: Adam_beard_010
+    100006: Adam_beard_02
+    100008: Adam_beard_03
+    100010: Adam_beard_04
+    100012: Adam_beard_05
+    100014: Adam_beard_06
+    100016: Adam_beard_07
+    100018: Adam_beard_08
+    100020: Adam_beard_09
+    100022: Adam_body
+    100024: Adam_hair_high
+    100026: Adam_head
+    100028: //RootNode
+    400000: Adam_beard
+    400002: Adam_beard_01
+    400004: Adam_beard_010
+    400006: Adam_beard_02
+    400008: Adam_beard_03
+    400010: Adam_beard_04
+    400012: Adam_beard_05
+    400014: Adam_beard_06
+    400016: Adam_beard_07
+    400018: Adam_beard_08
+    400020: Adam_beard_09
+    400022: Adam_body
+    400024: Adam_hair_high
+    400026: Adam_head
+    400028: //RootNode
+    2300000: Adam_beard_01
+    2300002: Adam_beard_010
+    2300004: Adam_beard_02
+    2300006: Adam_beard_03
+    2300008: Adam_beard_04
+    2300010: Adam_beard_05
+    2300012: Adam_beard_06
+    2300014: Adam_beard_07
+    2300016: Adam_beard_08
+    2300018: Adam_beard_09
+    2300020: Adam_body
+    2300022: Adam_hair_high
+    2300024: Adam_head
+    3300000: Adam_beard_01
+    3300002: Adam_beard_010
+    3300004: Adam_beard_02
+    3300006: Adam_beard_03
+    3300008: Adam_beard_04
+    3300010: Adam_beard_05
+    3300012: Adam_beard_06
+    3300014: Adam_beard_07
+    3300016: Adam_beard_08
+    3300018: Adam_beard_09
+    3300020: Adam_body
+    3300022: Adam_hair_high
+    3300024: Adam_head
+    4300000: Adam_body
+    4300002: Adam_head
+    4300004: Adam_hair_high
+    4300006: Adam_beard_010
+    4300008: Adam_beard_09
+    4300010: Adam_beard_08
+    4300012: Adam_beard_07
+    4300014: Adam_beard_06
+    4300016: Adam_beard_03
+    4300018: Adam_beard_05
+    4300020: Adam_beard_04
+    4300022: Adam_beard_01
+    4300024: Adam_beard_02
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
