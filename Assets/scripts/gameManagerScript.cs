@@ -32,6 +32,7 @@ public class gameManagerScript : MonoBehaviour {
             StartGame_Button.onClick.AddListener(gameStart);
         }
         Menu.GetComponent<myMenuController>().actSelf(true);
+        menuItemsSwitch(true);
         //time += time_ToComplete + time_TillStart;
     }
 
@@ -55,6 +56,7 @@ public class gameManagerScript : MonoBehaviour {
     void gameStart()
     {
         Menu.GetComponent<myMenuController>().actSelf(false);
+        menuItemsSwitch(false);
         time_TimetimeStart = Time.time;
 
         //time_TimetimeStart = time;
@@ -69,14 +71,26 @@ public class gameManagerScript : MonoBehaviour {
     //liveGameSetup thisSetup;
     //public liveGameSetup currentRig()
     //{
-        
+
     //}
+
+    void menuItemsSwitch(bool switching)
+    {
+        foreach (GameObject item in menuItems)
+        {
+            item.SetActive(switching);
+        }
+        return;
+    }
+
     /// <summary>
     /// When the game ends, it processes a timer and calculates the end game time to dissable the players ability to interact with the world objects.
     /// </summary>
     void gameEnd()
     {
         Menu.GetComponent<myMenuController>().actSelf(true);
+        menuItemsSwitch(true);
+
         running = false;
         player.DestroyBeard = false;
         if(StartGame_Button != null)
@@ -105,6 +119,7 @@ public class gameManagerScript : MonoBehaviour {
     }
     // Update is called once per frame
     public GameObject Menu;
+    public GameObject[] menuItems;
         //*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 
     ////////////public delegate void functionList();

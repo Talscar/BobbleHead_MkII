@@ -25,6 +25,7 @@ public class myMenuController : MonoBehaviour {
     //[SerializeField]private int[] pageProgress;// = { 0 };
     [Tooltip("This is this Menu's menu to activate so this menu is visable.")]
     public GameObject thisMenu;
+    public GameObject[] switchWith_thisMenu;
 
     /////
     //public GameObject myWorkingMenu;
@@ -58,12 +59,14 @@ public class myMenuController : MonoBehaviour {
             isActiveMenu = false;
         }
         thisMenu.SetActive(false);
+        withThisMenu(false);
             return;
     }
 
     public void returnToMenu()
     {
         thisMenu.SetActive(false);
+        withThisMenu(false);
         if (parentMenu != null)
         {
             parentMenu.SetActive(true);
@@ -87,6 +90,7 @@ public class myMenuController : MonoBehaviour {
     {
         this.gameObject.SetActive(true);
         thisMenu.SetActive(thisSwitch);
+        withThisMenu(thisSwitch);
         isActiveMenu = thisSwitch;
     }
 
@@ -97,6 +101,25 @@ public class myMenuController : MonoBehaviour {
         {
             returnToMenu();
         }
+    }
+
+    //public struct switchWithMenu
+    //{
+    //    [SerializeField]public GameObject withSwitch;
+    //    [SerializeField]
+    //    public bool actionWith_progress;
+    //    [SerializeField]
+    //    public bool actionWith_decent;
+    //}
+
+    void withThisMenu(bool switchThis)
+    {
+        if(switchWith_thisMenu.Length > 0)
+        foreach (GameObject with in switchWith_thisMenu)
+        {
+            with.SetActive(switchThis);
+        }
+        return;
     }
 
     //////////public void progressToThisMenu()

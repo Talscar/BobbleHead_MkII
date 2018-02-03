@@ -68,10 +68,10 @@ public class playerProfile: MonoBehaviour {
         //playersData[profileLoaded] = newData;
         if (playersData.Count > 0)
         {
-            foreach(m_profile profile in playersData)
-            {
+            //foreach(m_profile profile in playersData)
+            //{
 
-            }
+            //}
             int score = playersData[profileLoaded].scorePool + 5;
 
             //Creates a new Instance of playerData to be modified
@@ -129,15 +129,43 @@ public class playerProfile: MonoBehaviour {
     {
         Debug.Log("Loading...");
         //Load files and pulls data.
-        if(File.Exists(Application.persistentDataPath + "/playerProfiles.dat"))
+        if (File.Exists(Application.persistentDataPath + "/playerProfiles.dat"))
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/playerProfiles.dat", FileMode.Open);
             playerData data = (playerData)bf.Deserialize(file);
+
+            //data.m_ScorePool = playersData[profileLoaded].scorePool;
+            //data.m_Username = playersData[profileLoaded].username;
+            //playersData[profileLoaded].scorePool = data.m_ScorePool;
+            //playersData[profileLoaded].username = data.m_Username;
+            //playersData[profileLoaded] = updateData(new );
+            m_profile thisData = new m_profile();
+            thisData.username = data.m_Username;
+            thisData.scorePool = data.m_ScorePool;
+            thisData.highScore = data.m_HighScore;
+
+            ////Debug.Log("HELLO!!! " + data.m_Username);
+            usingPlayerData = thisData;
+            //playersData[profileLoaded] = thisData;
+
             file.Close();
 
         }
     }
+    //public void loadProfiles()
+    //{
+    //    Debug.Log("Loading...");
+    //    //Load files and pulls data.
+    //    if(File.Exists(Application.persistentDataPath + "/playerProfiles.dat"))
+    //    {
+    //        BinaryFormatter bf = new BinaryFormatter();
+    //        FileStream file = File.Open(Application.persistentDataPath + "/playerProfiles.dat", FileMode.Open);
+    //        playerData data = (playerData)bf.Deserialize(file);
+    //        file.Close();
+
+    //    }
+    //}
 
 
     public static playerProfile main;

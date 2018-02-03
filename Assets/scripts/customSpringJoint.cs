@@ -87,7 +87,7 @@ public class customSpringJoint : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        transform.position = position; //Game glitch RB moves the head position.
+        transform.position = position; 
         if(old_Threshold != threshold)
         {
             recalculateThreshold();
@@ -95,17 +95,8 @@ public class customSpringJoint : MonoBehaviour {
         calculateRotation();
 
         newTorque = (new_Force_Direction * dampning) * Time.deltaTime;
-        rb.AddTorque(((new_Force_Direction * dampning) * Time.deltaTime)/*New way to lower the new force*/);
+        rb.AddTorque(((new_Force_Direction * dampning) * Time.deltaTime));
         rb.angularVelocity = (rb.angularVelocity * springWeight);
-
-        //Vector3 force = rb.
-        //transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, originLocalRotation, 0.001f);
-        //Vector3 direction =  transform.eulerAngles - originLocalRotation;
-        //rb.AddRelativeTorque(-direction * 0.1f);
-        ///If rotation goes beyond a threshold range... The Ridgid body will have opposed forces to return it to stop it going beyond a certain position.
-        /// Get force
-        /// Apply opposng force * 1.01
-        //https://answers.unity.com/questions/407085/add-torque-at-position.html
 
     }
 }
