@@ -97,12 +97,12 @@ public class gameManagerScript : MonoBehaviour {
         {
             StartGame_Button.gameObject.SetActive(true);
         }
-        playerProfile.m_profile thisData = new playerProfile.m_profile();
+        PlayerScreenPointToClick.scoreKeeping thisData = new PlayerScreenPointToClick.scoreKeeping();
         {
-            thisData.highScore = player.myScore.points;
-            thisData.username = player.myScore.player_Name;
-            thisData.hairsCutSuccessfully = player.myScore.Successful_hairsCut;
-            thisData.hairsCutUnsuccessfully = player.myScore.Unsuccessful_hairsCut;
+            thisData.scorePool = player.myScore.points;
+            thisData.player_Name = player.myScore.player_Name;
+            thisData.Successful_hairsCut = player.myScore.Successful_hairsCut;
+            thisData.Unsuccessful_hairsCut = player.myScore.Unsuccessful_hairsCut;
         }
         //thisData.scorePool = pl
         playerProfile.main.updateData(thisData);

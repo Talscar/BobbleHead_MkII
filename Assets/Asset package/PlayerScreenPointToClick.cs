@@ -16,6 +16,8 @@ public class PlayerScreenPointToClick : MonoBehaviour {
         [SerializeField] public string player_Name;
         [SerializeField] public int time;
         [SerializeField] public int points;
+        [SerializeField] public int scorePool;
+        [SerializeField] public int highScore;
         [SerializeField] public int Successful_hairsCut;
         [SerializeField] public int Unsuccessful_hairsCut;
         [SerializeField] public int facesDone;

@@ -14,89 +14,90 @@ using System.IO;
 
 public class playerProfile: MonoBehaviour {
 
-    [System.Serializable]public struct m_profile
-    {
-        [SerializeField]
-        private int m_HighScore;
-        [SerializeField]
-        private string m_Username;
-        [SerializeField]
-        private int m_HairsCutSuccessfully;
-        [SerializeField]
-        private int m_HairsCutUnsuccessfully;
-        [SerializeField]
-        private int m_ScorePool;
+    //[System.Serializable]public struct m_profile
+    //{
+    //    [SerializeField]
+    //    private int m_HighScore;
+    //    [SerializeField]
+    //    private string m_Username;
+    //    [SerializeField]
+    //    private int m_HairsCutSuccessfully;
+    //    [SerializeField]
+    //    private int m_HairsCutUnsuccessfully;
+    //    [SerializeField]
+    //    private int m_ScorePool;
 
-        public int highScore
-        {
-            get { return m_HighScore; }
-            set { m_HighScore = value; }
-        }
-        public string username
-        {
-            get { return m_Username; }
-            set { m_Username = value; }
-        }
-        public int hairsCutSuccessfully
-        {
-            get { return m_HairsCutSuccessfully; }
-            set { m_HairsCutSuccessfully = value; }
-        }
-        public int hairsCutUnsuccessfully
-        {
-            get { return m_HairsCutUnsuccessfully; }
-            set { m_HairsCutUnsuccessfully = value; }
-        }
-        public int scorePool
-        {
-            get { return m_ScorePool; }
-            set { m_ScorePool = value; }
-        }
-        //public m_profile(int highScore)
-        //{
-        //    m_HighScore = highScore;
-        //}
-    }
-    [SerializeField]public static List<m_profile> playersData = new List<m_profile>(1);
+    //    public int highScore
+    //    {
+    //        get { return m_HighScore; }
+    //        set { m_HighScore = value; }
+    //    }
+    //    public string username
+    //    {
+    //        get { return m_Username; }
+    //        set { m_Username = value; }
+    //    }
+    //    public int hairsCutSuccessfully
+    //    {
+    //        get { return m_HairsCutSuccessfully; }
+    //        set { m_HairsCutSuccessfully = value; }
+    //    }
+    //    public int hairsCutUnsuccessfully
+    //    {
+    //        get { return m_HairsCutUnsuccessfully; }
+    //        set { m_HairsCutUnsuccessfully = value; }
+    //    }
+    //    public int scorePool
+    //    {
+    //        get { return m_ScorePool; }
+    //        set { m_ScorePool = value; }
+    //    }
+    //    //public m_profile(int highScore)
+    //    //{
+    //    //    m_HighScore = highScore;
+    //    //}
+    //}
+    [SerializeField]public static List<PlayerScreenPointToClick.scoreKeeping> playersData = new List<PlayerScreenPointToClick.scoreKeeping>(1);
+    [SerializeField]public List<PlayerScreenPointToClick.scoreKeeping> userData = new List<PlayerScreenPointToClick.scoreKeeping>(1);
     [SerializeField]public int profileLoaded = 0;
-    [SerializeField]public m_profile usingPlayerData;
+    [SerializeField]public PlayerScreenPointToClick.scoreKeeping usingPlayerData;
 
-    public m_profile updateData(m_profile newData)
+    public PlayerScreenPointToClick.scoreKeeping updateData(PlayerScreenPointToClick.scoreKeeping newData)
     {
         Debug.Log("Updating...");
         //playersData[profileLoaded].scorePool = newData.scorePool;
         //playersData[profileLoaded] = newData;
-        if (playersData.Count > 0)
+        if (userData.Count > 0)
         {
             //foreach(m_profile profile in playersData)
             //{
 
             //}
-            int score = playersData[profileLoaded].scorePool + 5;
+            int score = userData[profileLoaded].points + 5;
 
             //Creates a new Instance of playerData to be modified
-            m_profile updateProfile = playersData[profileLoaded];
+            PlayerScreenPointToClick.scoreKeeping updateProfile = userData[profileLoaded];
             {//Open
 
                 if(updateProfile.highScore < newData.highScore)
                     updateProfile.highScore = newData.highScore;
-                if (newData.username != "")
+                if (newData.player_Name != "")
                 {
-                    updateProfile.username = playersData[profileLoaded].username;
+                    updateProfile.player_Name = userData[profileLoaded].player_Name;
                 }
-                updateProfile.scorePool = playersData[profileLoaded].scorePool + newData.highScore;
+                updateProfile.scorePool = userData[profileLoaded].scorePool + newData.highScore;
 
 
-                updateProfile.hairsCutSuccessfully = playersData[profileLoaded].hairsCutSuccessfully + newData.hairsCutSuccessfully;
-                updateProfile.hairsCutUnsuccessfully = playersData[profileLoaded].hairsCutUnsuccessfully + newData.hairsCutUnsuccessfully;
+                updateProfile.Successful_hairsCut = userData[profileLoaded].Successful_hairsCut + newData.Successful_hairsCut;
+                updateProfile.Unsuccessful_hairsCut = userData[profileLoaded].Unsuccessful_hairsCut + newData.Unsuccessful_hairsCut;
                 newData.highScore = 0;
-                newData.hairsCutSuccessfully = 0;
-                newData.hairsCutUnsuccessfully = 0;
-                newData.username = "";
+                newData.Successful_hairsCut = 0;
+                newData.Unsuccessful_hairsCut = 0;
+                newData.player_Name = "";
                 newData.scorePool = 0;
             }//Close
             //Updates player Data
-            playersData[profileLoaded] = updateProfile;
+            userData[profileLoaded] = updateProfile;
             //playersData[profileLoaded].scorePool += newData.scorePool;
             newData.scorePool = 0;
 
@@ -140,13 +141,26 @@ public class playerProfile: MonoBehaviour {
             //playersData[profileLoaded].scorePool = data.m_ScorePool;
             //playersData[profileLoaded].username = data.m_Username;
             //playersData[profileLoaded] = updateData(new );
-            m_profile thisData = new m_profile();
-            thisData.username = data.m_Username;
+            PlayerScreenPointToClick.scoreKeeping thisData = new PlayerScreenPointToClick.scoreKeeping();
+            thisData.player_Name = data.m_Username;
             thisData.scorePool = data.m_ScorePool;
             thisData.highScore = data.m_HighScore;
-
-            ////Debug.Log("HELLO!!! " + data.m_Username);
             usingPlayerData = thisData;
+
+
+            //if (userData.Count > 0)
+            //userData[0] = usingPlayerData;
+            //else
+            //{
+            //    //userData = new List<PlayerScreenPointToClick.scoreKeeping>();
+            Debug.LogError("Scorepool: " + thisData.scorePool);
+            userData.Add(usingPlayerData);
+
+            //}
+
+            playersData = userData;
+            ////Debug.Log("HELLO!!! " + data.m_Username);
+
             //playersData[profileLoaded] = thisData;
 
             file.Close();
@@ -180,9 +194,9 @@ public class playerProfile: MonoBehaviour {
         {
             Destroy(gameObject);
         }
-        if(playersData.Count == 0)
+        if(userData.Count == 0)
         {
-            playersData = new List<m_profile>(1);
+            userData = new List<PlayerScreenPointToClick.scoreKeeping>(1);
         }
     }
 

@@ -10,14 +10,14 @@ public class leaderboard_Load : MonoBehaviour {
 	void OnEnable ()
     {
         Debug.LogError(playerProfile.playersData.Count + " Is counted");
-        List<playerProfile.m_profile> dataItems = playerProfile.playersData;
+        List<PlayerScreenPointToClick.scoreKeeping> dataItems = playerProfile.playersData;
         if (scorePreview != null)
         {
             int i = 1;
             scorePreview.text = "";
-            foreach (playerProfile.m_profile data in dataItems)
+            foreach (PlayerScreenPointToClick.scoreKeeping data in dataItems)
             {
-                scorePreview.text += i + "   " + data.username + "   " + data.highScore + "\n";
+                scorePreview.text += i + "   " + data.player_Name + "   " + data.scorePool + "\n";
                     i++;
                 Debug.Log("ADDING TOO LEADERBOARD!");
 //scores: place, player, score
@@ -29,9 +29,9 @@ public class leaderboard_Load : MonoBehaviour {
         //https://unity3d.com/learn/tutorials/modules/beginner/ui/ui-scroll-rect
     }
 
-    List<playerProfile.m_profile> sortData(List<playerProfile.m_profile> dataInput)
+    List<PlayerScreenPointToClick.scoreKeeping> sortData(List<PlayerScreenPointToClick.scoreKeeping> dataInput)
     {
-        List<playerProfile.m_profile> newData = new List<playerProfile.m_profile>(dataInput);
+        List<PlayerScreenPointToClick.scoreKeeping> newData = new List<PlayerScreenPointToClick.scoreKeeping>(dataInput);
 
         return newData;
     }
